@@ -1,0 +1,96 @@
+* {
+  width: 320px;
+  margin: 0;
+  padding: 0;
+  font-family: 'Playfair Display', serif;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #e5e5e5;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu {
+  position: absolute;
+  display: flex;
+  width: 20px;
+  height: 14px;
+  left: 284px;
+  top: 19px;
+}
+
+.logo {
+  display: flex;
+  width: 111px;
+  height: 74px;
+  left: 0;
+  top: 0;
+}
+
+.headline {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.deco {
+  padding: 32px 0;
+  display: flex;
+  width: 320px;
+  height: 160px;
+  left: 0;
+  top: 472px;
+}
+
+p {
+  padding-top: 20px;
+  padding-left: 16px;
+  display: flex;
+  width: 288px;
+  height: 126px;
+  left: 16px;
+  top: 224px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: -0.01em;
+  color: #1a2236;
+}
+
+h1 {
+  padding-top: 30px;
+  padding-left: 16px;
+  display: flex;
+  width: 220px;
+  height: 100px;
+  left: 16px;
+  top: 104px;
+  font-family: 'Playfair Display', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 100%;
+  color: #1a2236;
+}
+
+.collab {
+  align-self: center;
+  box-sizing: border-box;
+  width: 288px;
+  height: 50px;
+  background: #1a2236;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #fff;
+}
