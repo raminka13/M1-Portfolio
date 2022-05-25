@@ -1,0 +1,8 @@
+# Ignore Mac system files
+.DS_store
+
+# Ignore test.md
+test.md
+
+#Ignode node_modules
+node_modules/
