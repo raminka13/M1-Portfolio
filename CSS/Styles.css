@@ -1,77 +1,45 @@
 * {
-  width: 320px;
-  margin: 0;
-  padding: 0;
   font-family: 'Playfair Display', serif;
   font-family: 'Poppins', sans-serif;
 }
 
 body {
-  background-color: #e5e5e5;
+  background-color: #fff;
+  margin: 0;
+  padding: 0;
 }
 
-.header {
+.nav {
+  height: 4em;
+  background-image: url(../Images/image_geometry_1.png);
+  background-repeat: no-repeat;
+  background-color: #fff;
+  background-size: 74px;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
 }
 
-.menu {
-  position: absolute;
-  display: flex;
-  width: 20px;
+.menu a {
+  display: inline-block;
+  margin: 1em;
   height: 14px;
-  left: 284px;
-  top: 19px;
+  width: 20px;
 }
 
-.logo {
-  display: flex;
-  width: 111px;
-  height: 74px;
-  left: 0;
-  top: 0;
+.menu img {
+  height: 14px;
+  width: 20px;
 }
 
-.headline {
+.homesection {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
-.deco {
-  padding: 32px 0;
-  display: flex;
-  width: 320px;
-  height: 160px;
-  left: 0;
-  top: 472px;
-}
-
-p {
-  padding-top: 20px;
-  padding-left: 16px;
-  display: flex;
-  width: 288px;
-  height: 126px;
-  left: 16px;
-  top: 224px;
-  font-family: 'Poppins', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 21px;
-  letter-spacing: -0.01em;
-  color: #1a2236;
-}
-
-h1 {
-  padding-top: 30px;
-  padding-left: 16px;
-  display: flex;
-  width: 220px;
-  height: 100px;
-  left: 16px;
-  top: 104px;
+.mtitle {
+  padding-left: 0.5em;
   font-family: 'Playfair Display', serif;
   font-style: normal;
   font-weight: 400;
@@ -80,10 +48,22 @@ h1 {
   color: #1a2236;
 }
 
-.collab {
-  align-self: center;
+.mtext {
+  margin: auto 1.5em;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: -0.01em;
+}
+
+.collabbutton {
+  margin-top: 2em;
+  padding: 0.5em 3em;
   box-sizing: border-box;
-  width: 288px;
+  border: 0;
+  cursor: pointer;
   height: 50px;
   background: #1a2236;
   font-family: 'Poppins', sans-serif;
@@ -93,4 +73,26 @@ h1 {
   line-height: 24px;
   text-align: center;
   color: #fff;
+}
+
+.collabbutton:hover {
+  background: #fff;
+  color: #1a2236;
+  border: 1px solid #1a2236;
+}
+
+.collabbutton:active {
+  border: 2px solid #1a2236;
+}
+
+.decoimg {
+  margin: 2em 0;
+  height: 100%;
+  width: 100%;
+  background-image: url(../Images/image_geometry_2.png);
+  background-repeat: no-repeat;
+  background-color: #fff;
+  background-position: center center;
+  background-size: 100%;
+  padding-bottom: 50%;
 }
