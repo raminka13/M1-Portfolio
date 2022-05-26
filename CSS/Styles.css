@@ -1,0 +1,98 @@
+* {
+  font-family: 'Playfair Display', serif;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+.nav {
+  height: 4em;
+  background-image: url(../Images/image_geometry_1.png);
+  background-repeat: no-repeat;
+  background-color: #fff;
+  background-size: 74px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.menu a {
+  display: inline-block;
+  margin: 1em;
+  height: 14px;
+  width: 20px;
+}
+
+.menu img {
+  height: 14px;
+  width: 20px;
+}
+
+.homesection {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.mtitle {
+  padding-left: 0.5em;
+  font-family: 'Playfair Display', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 100%;
+  color: #1a2236;
+}
+
+.mtext {
+  margin: auto 1.5em;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: -0.01em;
+}
+
+.collabbutton {
+  margin-top: 2em;
+  padding: 0.5em 3em;
+  box-sizing: border-box;
+  border: 0;
+  cursor: pointer;
+  height: 50px;
+  background: #1a2236;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #fff;
+}
+
+.collabbutton:hover {
+  background: #fff;
+  color: #1a2236;
+  border: 1px solid #1a2236;
+}
+
+.collabbutton:active {
+  border: 2px solid #1a2236;
+}
+
+.decoimg {
+  margin: 2em 0;
+  height: 100%;
+  width: 100%;
+  background-image: url(../Images/image_geometry_2.png);
+  background-repeat: no-repeat;
+  background-color: #fff;
+  background-position: center center;
+  background-size: 100%;
+  padding-bottom: 50%;
+}
