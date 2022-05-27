@@ -22,8 +22,6 @@ body {
 .menu a {
   display: inline-block;
   margin: 1em;
-  height: 14px;
-  width: 20px;
 }
 
 .menu img {
@@ -36,6 +34,10 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+}
+
+.maintitle {
+  width: 100%;
 }
 
 .mtitle {
@@ -59,12 +61,12 @@ body {
 }
 
 .collabbutton {
-  margin-top: 2em;
-  padding: 0.5em 3em;
+  margin: 2em 0;
   box-sizing: border-box;
   border: 0;
   cursor: pointer;
   height: 50px;
+  width: 300px;
   background: #1a2236;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
@@ -73,6 +75,12 @@ body {
   line-height: 24px;
   text-align: center;
   color: #fff;
+}
+
+.collabbutton img {
+  width: 25px;
+  height: auto;
+  margin-left: 10px;
 }
 
 .collabbutton:hover {
@@ -95,4 +103,112 @@ body {
   background-position: center center;
   background-size: 100%;
   padding-bottom: 50%;
+}
+
+.works {
+  display: grid;
+}
+
+.project {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.projectimg {
+  width: 100%;
+  height: auto;
+}
+
+.projectwrp {
+  background-color: #1a2236;
+  width: 100%;
+}
+
+.projtxt {
+  margin-bottom: 0.5em;
+  padding-left: 1em;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 80%;
+  color: #fff;
+}
+
+.projlang {
+margin-left: 1em;
+}
+
+.projlang ul {
+  display: flex;
+  width: 75%;
+  justify-content: space-between;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.smallbtn {
+  box-sizing: border-box;
+  padding: 1px 6px;
+  border: 0;
+  cursor: pointer;
+  background: #98dede;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 10px;
+  line-height: 80%;
+  text-align: center;
+  color: #1a2236;
+  height: 20px;
+}
+
+.smallbtn:hover {
+  background: #fff;
+  color: #1a1a1a;
+}
+
+.smallbtn:active {
+  background: #98dede;
+  color: #1a2236;
+}
+
+.projbtn {
+  margin: 1.25em 0 1.25em 1em;
+  padding: 9px 18px 9px 9px;
+  box-sizing: border-box;
+  cursor: pointer;
+  height: 50px;
+  background: #1a2236;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+.projbtn img {
+  width: 20px;
+  height: auto;
+  margin-left: 10px;
+}
+
+.projbtn:hover {
+  background: #fff;
+  color: #1a2236;
+}
+
+.projbtn:active {
+  border: 2px solid #1a2236;
+}
+
+.about {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
