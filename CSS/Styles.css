@@ -136,7 +136,7 @@ body {
 }
 
 .projlang {
-margin-left: 1em;
+  margin-left: 1em;
 }
 
 .projlang ul {
@@ -211,4 +211,72 @@ margin-left: 1em;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+}
+
+.lang {
+  margin-bottom: 1em;
+  background-image: url(../Images/languages.png);
+  background-position: right bottom;
+  background-size: 50%;
+  background-repeat: no-repeat;
+  width: 90%;
+  height: 20em;
+  background-color: #1c528a;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.frames {
+  margin-bottom: 1em;
+  background-image: url(../Images/frameworks.png);
+  background-position: right bottom;
+  background-size: 50%;
+  background-repeat: no-repeat;
+  width: 90%;
+  height: 20em;
+  background-color: #e2505c;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.skills {
+  margin-bottom: 1em;
+  background-image: url(../Images/skills.png);
+  background-position: right bottom;
+  background-size: 50%;
+  background-repeat: no-repeat;
+  width: 90%;
+  height: 20em;
+  background-color: #febf52;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.litxt {
+  font-style: normal;
+  width: 90%;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  letter-spacing: -0.0525em;
+  color: #fff;
+  list-style-position: inside;
+}
+
+.sectitle {
+  margin-top: 1.5em;
+  padding-left: 2em;
+  font-style: normal;
+  width: 90%;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 30px;
+  color: #fff;
 }
