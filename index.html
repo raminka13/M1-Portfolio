@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="./CSS/styles.css">
+    <link rel="stylesheet" href="./CSS/Styles.css">
     <title>Raminka Portfolio</title>
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
@@ -171,5 +171,46 @@
         </div>
     </section>
     
+    <section class="contact">
+        <div class="topimg">
+        </div>
+        <div class="maintitle">
+            <h1 class="mtitle" >Get started</h1>
+        </div>
+        <div class="maintxt">
+            <p class="mtext" >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+        </div>
+        <form action="https://formspree.io/f/mayvvvnd" method="POST">
+            <ul class="contactform">
+                <li>
+                <label for="fname">Your name</label>
+                    <input type="text" name="name" id="fname" placeholder="Jhon Doe" required="" maxlength="30" pattern="([A-ZΆ-ΫÀ-ÖØ-Þ][A-ZΆ-ΫÀ-ÖØ-Þa-zά-ώß-öø-ÿ]{1,19} ?){1,10}">
+                </li>
+                <li>
+                <label for="email-address">Your email</label>
+                    <input type="email" name="email" id="email-address" placeholder="email@domain.com" required="" pattern="(?!(^[.-].*|[^@]*[.-]@|.*\.{2,}.*)|^.{254}.)([a-zA-Z0-9!#$%&'*+\/=?^_`{|}~.-]+@)(?!-.*|.*-\.)([a-zA-Z0-9-]{1,63}\.)+[a-zA-Z]{2,15}">
+                </li>
+                <li>
+                <textarea rows="4" name="message" id="message" placeholder="Enter your message here..." required="" maxlength="500"></textarea>
+                </li>
+            </ul>
+            <button class="collabbutton" type="submit">Start collaboration</button>
+        </form>
+    </section>
+    <footer class="footer">
+        <div class="getlink">
+            <a href="#">Get my Resume</a>
+        </div>
+        <div>
+            <ul class="socialinks">
+                <li><a href="https://stackoverflow.com/"><img src="./Images/ic_stackoverflow.png" alt="Stack Overflow link"></a></li>
+                <li><a href="https://github.com/"><img src="./Images/ic_github.png" alt="GitHub link"></a></li>
+                <li><a href="https://twitter.com/"><img src="./Images/ic_twitter.png" alt="twitter link"></a></li>
+                <li><a href="https://linkedin.com/"><img src="./Images/ic_linkedin.png" alt="linkedin link"></a></li>
+                <li><a href="https://medium.com/"><img src="./Images/ic_medium.png" alt="medium link"></a></li>
+                <li><a href="https://angel.co/"><img src="./Images/ic_angellist.png" alt="angellist link"></a></li>
+            </ul>
+        </div>
+    </footer>
 </body>
 </html>

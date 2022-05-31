@@ -9,6 +9,10 @@ body {
   padding: 0;
 }
 
+ul {
+  list-style: none;
+}
+
 .nav {
   height: 4em;
   background-image: url(../Images/image_geometry_1.png);
@@ -143,7 +147,6 @@ body {
   display: flex;
   width: 75%;
   justify-content: space-between;
-  list-style: none;
   margin: 0;
   padding: 0;
 }
@@ -211,9 +214,12 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  margin-bottom: 1.5em;
 }
 
-.lang {
+.lang,
+.frames,
+.skills {
   margin-bottom: 1em;
   background-image: url(../Images/languages.png);
   background-position: right bottom;
@@ -229,33 +235,13 @@ body {
 }
 
 .frames {
-  margin-bottom: 1em;
   background-image: url(../Images/frameworks.png);
-  background-position: right bottom;
-  background-size: 50%;
-  background-repeat: no-repeat;
-  width: 90%;
-  height: 20em;
   background-color: #e2505c;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  align-items: center;
 }
 
 .skills {
-  margin-bottom: 1em;
   background-image: url(../Images/skills.png);
-  background-position: right bottom;
-  background-size: 50%;
-  background-repeat: no-repeat;
-  width: 90%;
-  height: 20em;
   background-color: #febf52;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  align-items: center;
 }
 
 .litxt {
@@ -279,4 +265,124 @@ body {
   font-size: 20px;
   line-height: 30px;
   color: #fff;
+}
+
+.contact {
+  background-color: #f9f9fa;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+
+.topimg {
+  margin: 0;
+  height: 74px;
+  width: 100%;
+  background-image: url(../Images/image_geometry_1.png);
+  background-repeat: no-repeat;
+  background-color: #f9f9fa;
+  background-position: top left;
+  background-size: 74px;
+}
+
+.contact form {
+  width: 99%;
+  margin: 1em 1em;
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.contactform {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+.contactform input,
+textarea {
+  border: 0;
+  box-sizing: border-box;
+  width: 98%;
+  padding-left: 10px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  color: #1a2236;
+}
+
+.contactform ::placeholder {
+  color: #7d7c84;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+}
+
+.contactform li {
+  width: 100%;
+  margin-top: 0.5em;
+  background-color: #fff;
+  border: 1px solid #dfdfe0;
+  border-radius: 4px;
+}
+
+.contactform label {
+  padding-left: 10px;
+  background-color: #fff;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 15px;
+  color: #7d7c84;
+}
+
+.footer {
+  background-color: #1a2236;
+  padding: 0;
+  margin: 0;
+  height: 150px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 2rem;
+}
+
+.getlink {
+  width: 160px;
+  background-image: url(../Images/ic_link_teal.png);
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: 22px;
+  margin-right: 5rem;
+}
+
+.getlink a {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  color: #92dcdc;
+  text-decoration: none;
+}
+
+.socialinks {
+  display: flex;
+  justify-content: space-evenly;
+  width: 90%;
+  margin: 0.5em;
+  padding: 0;
+}
+
+.socialinks li {
+  display: inline-block;
+  padding: 0;
+}
+
+.socialinks img {
+  height: 50%;
+  width: auto;
 }
