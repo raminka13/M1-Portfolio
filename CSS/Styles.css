@@ -347,8 +347,9 @@ textarea {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: flex-start;
   align-items: center;
+  padding-left: 2rem;
 }
 
 .getlink {
@@ -357,6 +358,7 @@ textarea {
   background-repeat: no-repeat;
   background-position: right center;
   background-size: 22px;
+  margin-right: 5rem;
 }
 
 .getlink a {
@@ -377,6 +379,7 @@ textarea {
 
 .socialinks li {
   display: inline-block;
+  padding: 0;
 }
 
 .socialinks img {
