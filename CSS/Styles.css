@@ -62,7 +62,8 @@ ul {
   width: 20px;
 }
 
-.homewrp {
+.homewrp,
+.aboutwrpr {
   padding-top: 63px;
   display: flex;
   flex-wrap: wrap;
@@ -270,6 +271,12 @@ ul {
   margin-bottom: 1.5em;
 }
 
+.contain {
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 .lang,
 .frames,
 .skills {
@@ -460,7 +467,8 @@ textarea {
     display: flex;
   }
 
-  .homewrp {
+  .homewrp,
+  .aboutwrpr {
     width: 50%;
     padding-left: 70px;
     justify-content: space-between;
@@ -498,5 +506,21 @@ textarea {
 
   .projectwrp {
     display: none;
+  }
+
+  .about {
+    width: 70%;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: row-reverse;
+  }
+
+  .aboutwrpr {
+    
+  }
+
+  .contain {
+    width: 50%;
   }
 }
