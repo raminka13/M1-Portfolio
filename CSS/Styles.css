@@ -14,6 +14,8 @@ ul {
 }
 
 .nav {
+  position: fixed;
+  width: 100%;
   height: 4em;
   background-image: url(../Images/image_geometry_1.png);
   background-repeat: no-repeat;
@@ -21,6 +23,33 @@ ul {
   background-size: 74px;
   display: flex;
   justify-content: flex-end;
+}
+
+.navlinks {
+  display: none;
+  width: 45%;
+  text-align: right;
+  flex: 1;
+}
+
+.navlinks ul {
+  margin: auto;
+  padding: 0;
+}
+
+.navlinks li {
+  display: inline-block;
+  position: relative;
+  padding: 20px;
+  margin: auto;
+}
+
+.navlinks a {
+  color: #1a2236;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 24px;
 }
 
 .menu a {
@@ -33,7 +62,8 @@ ul {
   width: 20px;
 }
 
-.homesection {
+.homewrp {
+  padding-top: 63px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -52,6 +82,13 @@ ul {
   font-size: 50px;
   line-height: 100%;
   color: #1a2236;
+}
+
+.projtitle h1 {
+  position: static;
+  transform: rotate(-90deg);
+  width: 330px;
+  height: 330px;
 }
 
 .mtext {
@@ -109,8 +146,21 @@ ul {
   padding-bottom: 50%;
 }
 
+.decoimgdsktp {
+  display: none;
+  min-height: 600px;
+  width: 50%;
+  background-image: url(../Images/image-geometry_1-dsktp.svg);
+  background-repeat: no-repeat;
+  background-color: #fff;
+  background-position: center;
+  background-size: cover;
+}
+
 .works {
-  display: grid;
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 20px;
 }
 
 .project {
@@ -130,7 +180,7 @@ ul {
 
 .projtxt {
   margin-bottom: 0.5em;
-  padding-left: 1em;
+  padding-left: 20px;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 300;
@@ -140,15 +190,17 @@ ul {
 }
 
 .projlang {
-  margin-left: 1em;
+  margin-left: 20px;
 }
 
 .projlang ul {
   display: flex;
-  width: 75%;
-  justify-content: space-between;
   margin: 0;
   padding: 0;
+}
+
+.projlang li {
+  margin-right: 10px;
 }
 
 .smallbtn {
@@ -210,6 +262,7 @@ ul {
 }
 
 .about {
+  padding-top: 20px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -385,4 +438,65 @@ textarea {
 .socialinks img {
   height: 50%;
   width: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .nav {
+    box-shadow: 0 0.5px 0 #dddfe6;
+    background-image: none;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .navlinks {
+    display: flex;
+  }
+
+  .homesection {
+    display: flex;
+  }
+
+  .homewrp {
+    width: 50%;
+    padding-left: 70px;
+    justify-content: space-between;
+  }
+
+  .maintitle {
+    width: 100%;
+  }
+
+  .mtitle {
+    font-size: 90px;
+    line-height: 90px;
+    padding: 0;
+  }
+
+  .maintxt {
+    width: 90%;
+  }
+
+  .mtext {
+    margin: 0;
+  }
+
+  .decoimg {
+    display: none;
+  }
+
+  .decoimgdsktp {
+    display: block;
+  }
+
+  .project {
+    width: 20%;
+  }
+
+  .projectwrp {
+    display: none;
+  }
 }
