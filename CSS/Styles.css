@@ -5,8 +5,10 @@
 
 body {
   background-color: #fff;
-  margin: 0;
+  margin: auto;
   padding: 0;
+  width: 100vw;
+  z-index: 0;
 }
 
 ul {
@@ -23,6 +25,7 @@ ul {
   background-size: 74px;
   display: flex;
   justify-content: flex-end;
+  z-index: 3;
 }
 
 .navlinks {
@@ -62,8 +65,14 @@ ul {
   width: 20px;
 }
 
+.homesection {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .homewrp,
 .aboutwrpr {
+  width: 100%;
   padding-top: 63px;
   display: flex;
   flex-wrap: wrap;
@@ -83,13 +92,6 @@ ul {
   font-size: 50px;
   line-height: 100%;
   color: #1a2236;
-}
-
-.projtitle h1 {
-  position: static;
-  transform: rotate(-90deg);
-  width: 330px;
-  height: 330px;
 }
 
 .mtext {
@@ -262,6 +264,30 @@ ul {
   border: 2px solid #1a2236;
 }
 
+.shape1 {
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  display: none;
+  width: auto;
+  height: auto;
+  flex: 1 1 20%;
+}
+
+.shape2 {
+  border-radius: 50% 50% 0 50%;
+  display: none;
+  width: auto;
+  height: auto;
+  flex: 1 1 20%;
+}
+
+.yllw {
+  background-color: #febf52;
+}
+
+.teal {
+  background-color: #98dede;
+}
+
 .about {
   padding-top: 20px;
   display: flex;
@@ -277,9 +303,7 @@ ul {
   justify-content: center;
 }
 
-.lang,
-.frames,
-.skills {
+.card {
   margin-bottom: 1em;
   background-image: url(../Images/languages.png);
   background-position: right bottom;
@@ -331,23 +355,36 @@ ul {
   background-color: #f9f9fa;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: flex-end;
 }
 
 .topimg {
   margin: 0;
-  height: 74px;
+  height: 80px;
   width: 100%;
   background-image: url(../Images/image_geometry_1.png);
   background-repeat: no-repeat;
   background-color: #f9f9fa;
   background-position: top left;
-  background-size: 74px;
+  background-size: 25%;
 }
 
-.contact form {
-  width: 99%;
+.bottomimg {
+  display: none;
+  margin: 0;
+  height: auto;
+  width: auto;
+  background-image: url(../Images/image-geometry_7.png);
+  background-repeat: no-repeat;
+  background-color: #f9f9fa;
+  background-position: bottom right;
+  background-size: 100%;
+}
+
+.contactctn {
+  width: auto;
+}
+
+.contactctn form {
   margin: 1em 1em;
   display: inline-flex;
   flex-wrap: wrap;
@@ -404,10 +441,9 @@ textarea {
   padding: 0;
   margin: 0;
   height: 150px;
-  width: 100%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
   padding-left: 2rem;
 }
@@ -440,6 +476,8 @@ textarea {
 .socialinks li {
   display: inline-block;
   padding: 0;
+  width: fit-content;
+  height: auto;
 }
 
 .socialinks img {
@@ -464,14 +502,17 @@ textarea {
   }
 
   .homesection {
-    display: flex;
+    margin-bottom: 60px;
+    flex-wrap: nowrap;
+    height: 100vh;
   }
 
   .homewrp,
   .aboutwrpr {
     width: 50%;
     padding-left: 70px;
-    justify-content: space-between;
+    justify-content: flex-start;
+    align-items: flex-start;
   }
 
   .maintitle {
@@ -500,16 +541,55 @@ textarea {
     display: block;
   }
 
+  .works {
+    padding-top: 120px;
+  }
+
   .project {
-    width: 20%;
+    width: auto;
+    height: 20%;
+    flex: 1 1 25%;
+  }
+
+  .projtitle {
+    background-image: url(../Images/image_dots.svg);
+    background-repeat: no-repeat;
+    background-position: right top;
+    justify-content: center;
+    align-items: flex-start;
+    flex: 1 0 40%;
+  }
+
+  .projtitle h1 {
+    position: relative;
+    transform: rotate(-90deg);
+    width: 100%;
+    text-align: left;
   }
 
   .projectwrp {
     display: none;
   }
 
+  .mproj {
+    width: auto;
+    flex: 1 1 50%;
+  }
+
+  .mproj .projectwrp {
+    display: block;
+  }
+
+  .shape1 {
+    display: block;
+  }
+
+  .shape2 {
+    display: block;
+  }
+
   .about {
-    width: 70%;
+    width: 100%;
     justify-content: center;
     align-items: center;
     flex-wrap: nowrap;
@@ -517,10 +597,65 @@ textarea {
   }
 
   .aboutwrpr {
-    
+    padding: 0;
+    margin: 0 0 0 60px;
+    width: 50%;
   }
 
   .contain {
-    width: 50%;
+    width: 40%;
+  }
+
+  .card {
+    padding: 0;
+    margin: 0;
+    height: 200px;
+    width: 200px;
+    flex: 1 1 40%;
+  }
+
+  .sectitle {
+    font-size: 13px;
+  }
+
+  .litxt ul {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 11px;
+    font-weight: 200;
+    line-height: 14px;
+  }
+
+  .dots {
+    background-image: url(../Images/image_dots.svg);
+    background-repeat: no-repeat;
+    background-size: 90%;
+    background-position: right bottom;
+    width: auto;
+    height: auto;
+    flex: 1 0 25%;
+  }
+
+  .contact {
+    flex-wrap: nowrap;
+  }
+
+  .topimg {
+    height: auto;
+    background-image: url(../Images/image-geometry_6.png);
+    background-repeat: no-repeat;
+    background-color: #f9f9fa;
+    background-position: top left;
+    background-size: 100%;
+    flex: 1 1 12%;
+  }
+
+  .bottomimg {
+    display: block;
+    flex: 1 1 12%;
+  }
+
+  .contactctn {
+    flex: 1 1 60%;
   }
 }

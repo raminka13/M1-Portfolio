@@ -44,7 +44,7 @@
         <div class="projtitle">
             <h1 class="mtitle">Projects</h1>
         </div>
-        <div class="project">
+        <div class="project mproj">
             <img class="projectimg" src="./Images/project1.jpg" alt="Project Image">
             <div class="projectwrp">
                 <h2 class="projtxt">Project Name Goes Here</h2>
@@ -58,6 +58,7 @@
                 <button type="button" class="projbtn">See this project <img src="./Images/arrow.png" alt=""></button>
             </div>
         </div>
+        <div class="shape1 yllw"></div>
         <div class="project">
             <img class="projectimg" src="./Images/project2.jpg" alt="Project Image">
             <div class="projectwrp">
@@ -72,6 +73,7 @@
                 <button type="button" class="projbtn">See this project<img src="./Images/arrow.png" alt=""></button>
             </div>
         </div>
+        <div class="shape2 teal"></div>
         <div class="project">
             <img class="projectimg" src="./Images/project3.jpg" alt="Project Image">
             <div class="projectwrp">
@@ -141,7 +143,7 @@
             <button type="button" class="collabbutton">Get my CV <img src="./Images/ic_download.png" alt=""></button>
         </div>
         <div class="contain">
-            <div class="lang">
+            <div class="card lang">
                 <div class="sectitle">
                     <h2>Languages</h2>
                 </div>
@@ -154,7 +156,7 @@
                 </ul>
                 </div>
             </div>
-            <div class="frames">
+            <div class="card frames">
                 <div class="sectitle">
                     <h2>Frameworks</h2>
                 </div>
@@ -168,7 +170,7 @@
                 </ul>
                 </div>
             </div>
-            <div class="skills">
+            <div class="card skills">
                 <div class="sectitle">
                     <h2>Skills</h2>
                 </div>
@@ -182,34 +184,37 @@
                 </ul>
                 </div>
             </div>
+            <div class="dots"></div>
         </div>
     </section>
     
     <section class="contact" id="contact">
-        <div class="topimg">
+        <div class="topimg"></div>
+        <div class="contactctn">
+            <div class="maintitle">
+                <h1 class="mtitle" >Get started</h1>
+            </div>
+            <div class="maintxt">
+                <p class="mtext" >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+            </div>
+            <form action="https://formspree.io/f/mayvvvnd" method="POST">
+                <ul class="contactform">
+                    <li>
+                    <label for="fname">Your name</label>
+                        <input type="text" name="name" id="fname" placeholder="Jhon Doe" required="" maxlength="30" pattern="([A-ZΆ-ΫÀ-ÖØ-Þ][A-ZΆ-ΫÀ-ÖØ-Þa-zά-ώß-öø-ÿ]{1,19} ?){1,10}">
+                    </li>
+                    <li>
+                    <label for="email-address">Your email</label>
+                        <input type="email" name="email" id="email-address" placeholder="email@domain.com" required="" pattern="(?!(^[.-].*|[^@]*[.-]@|.*\.{2,}.*)|^.{254}.)([a-zA-Z0-9!#$%&'*+\/=?^_`{|}~.-]+@)(?!-.*|.*-\.)([a-zA-Z0-9-]{1,63}\.)+[a-zA-Z]{2,15}">
+                    </li>
+                    <li>
+                    <textarea rows="4" name="message" id="message" placeholder="Enter your message here..." required="" maxlength="500"></textarea>
+                    </li>
+                </ul>
+                <button class="collabbutton" type="submit">Start collaboration</button>
+            </form>
         </div>
-        <div class="maintitle">
-            <h1 class="mtitle" >Get started</h1>
-        </div>
-        <div class="maintxt">
-            <p class="mtext" >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
-        </div>
-        <form action="https://formspree.io/f/mayvvvnd" method="POST">
-            <ul class="contactform">
-                <li>
-                <label for="fname">Your name</label>
-                    <input type="text" name="name" id="fname" placeholder="Jhon Doe" required="" maxlength="30" pattern="([A-ZΆ-ΫÀ-ÖØ-Þ][A-ZΆ-ΫÀ-ÖØ-Þa-zά-ώß-öø-ÿ]{1,19} ?){1,10}">
-                </li>
-                <li>
-                <label for="email-address">Your email</label>
-                    <input type="email" name="email" id="email-address" placeholder="email@domain.com" required="" pattern="(?!(^[.-].*|[^@]*[.-]@|.*\.{2,}.*)|^.{254}.)([a-zA-Z0-9!#$%&'*+\/=?^_`{|}~.-]+@)(?!-.*|.*-\.)([a-zA-Z0-9-]{1,63}\.)+[a-zA-Z]{2,15}">
-                </li>
-                <li>
-                <textarea rows="4" name="message" id="message" placeholder="Enter your message here..." required="" maxlength="500"></textarea>
-                </li>
-            </ul>
-            <button class="collabbutton" type="submit">Start collaboration</button>
-        </form>
+        <div class="bottomimg"></div>
     </section>
     <footer class="footer">
         <div class="getlink">
