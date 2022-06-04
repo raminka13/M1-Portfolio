@@ -21,7 +21,7 @@ ul {
   height: 4em;
   background-image: url(../Images/image_geometry_1.png);
   background-repeat: no-repeat;
-  background-color: #fff;
+  background-color: #fffffff9;
   background-size: 74px;
   display: flex;
   justify-content: flex-end;
@@ -73,6 +73,7 @@ ul {
 .homewrp,
 .aboutwrpr {
   width: 100%;
+  margin: 1% 5%;
   padding-top: 63px;
   display: flex;
   flex-wrap: wrap;
@@ -164,12 +165,27 @@ ul {
 }
 
 .works {
-  display: flex;
-  flex-wrap: wrap;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
   padding-top: 20px;
 }
 
+.projtitle {
+  width: auto;
+  grid-column: span 12;
+  grid-row: span 1;
+}
+
+.deco1,
+.deco2,
+.deco3,
+.deco4 {
+  display: none;
+}
+
 .project {
+  grid-column: span 12;
   display: flex;
   flex-wrap: wrap;
 }
@@ -267,30 +283,6 @@ ul {
   border: 2px solid #1a2236;
 }
 
-.shape1 {
-  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
-  display: none;
-  width: auto;
-  height: auto;
-  flex: 1 1 20%;
-}
-
-.shape2 {
-  border-radius: 50% 50% 0 50%;
-  display: none;
-  width: auto;
-  height: auto;
-  flex: 1 1 20%;
-}
-
-.yllw {
-  background-color: #febf52;
-}
-
-.teal {
-  background-color: #98dede;
-}
-
 .about {
   padding-top: 20px;
   display: flex;
@@ -368,7 +360,7 @@ ul {
   background-repeat: no-repeat;
   background-color: #f9f9fa;
   background-position: top left;
-  background-size: 25%;
+  background-size: contain;
 }
 
 .bottomimg {
@@ -385,6 +377,7 @@ ul {
 
 .contactctn {
   width: auto;
+  margin-top: 70px;
 }
 
 .contactctn form {
@@ -505,7 +498,7 @@ textarea {
   }
 
   .homesection {
-    padding-top: 60px;
+    padding-top: 65px;
     margin-bottom: 60px;
     flex-wrap: nowrap;
     height: 100vh;
@@ -514,9 +507,11 @@ textarea {
   .homewrp,
   .aboutwrpr {
     width: 50%;
+    margin: 20px 40px;
     padding-left: 70px;
     justify-content: flex-start;
     align-items: flex-start;
+    flex: 0 1 50%;
   }
 
   .maintitle {
@@ -551,24 +546,25 @@ textarea {
 
   .project {
     width: auto;
-    height: 20%;
-    flex: 1 1 25%;
+    grid-column: span 3;
+    grid-row: span 1;
   }
 
   .projtitle {
+    width: auto;
+    grid-column: span 6;
+    grid-row: span 2;
     background-image: url(../Images/image_dots.svg);
     background-repeat: no-repeat;
     background-position: right top;
     justify-content: center;
     align-items: flex-start;
-    flex: 1 0 40%;
   }
 
   .projtitle h1 {
-    position: relative;
+    position: static;
     transform: rotate(-90deg);
-    width: 100%;
-    text-align: left;
+    text-align: center;
   }
 
   .projectwrp {
@@ -577,19 +573,58 @@ textarea {
 
   .mproj {
     width: auto;
-    flex: 1 1 50%;
+    grid-column: span 4;
+    grid-row: span 2;
   }
 
   .mproj .projectwrp {
     display: block;
   }
 
-  .shape1 {
+  .deco1,
+  .deco2,
+  .deco3,
+  .deco4 {
     display: block;
+    height: auto;
+    width: auto;
+    grid-column: span 2;
+    grid-row: span 1;
+    background-image: url(../Images/deco2.png);
+    background-repeat: repeat;
+    background-position: top left;
+    background-size: contain;
   }
 
-  .shape2 {
-    display: block;
+  .deco2 {
+    background-image: url(../Images/deco1.png);
+    background-position: center;
+  }
+
+  .deco3 {
+    background-image: url(../Images/deco3.png);
+    grid-column: span 3;
+    grid-row: span 1;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+  }
+
+  .deco4 {
+    background-image: url(../Images/deco4.png);
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    grid-column: span 1;
+    grid-row: span 1;
+    background-size: contain;
+  }
+
+  .deco5 {
+    grid-column: span 1;
+    background-image: url(../Images/deco5.png);
+    background-position: top;
+    background-size: contain;
+    background-repeat: no-repeat;
   }
 
   .about {
@@ -609,6 +644,7 @@ textarea {
 
   .contain {
     width: 30%;
+    margin: 30px 20px 30px 90px;
   }
 
   .card,
@@ -647,6 +683,7 @@ textarea {
   }
 
   .contact {
+    height: 90vh;
     flex-wrap: nowrap;
     margin-top: 180px;
   }
@@ -658,25 +695,25 @@ textarea {
     background-color: #f9f9fa;
     background-position: top left;
     background-size: 100%;
-    flex: 0 1 9%;
+    flex: 1 1 20%;
   }
 
   .bottomimg {
     display: block;
-    flex: 0 1 9%;
+    flex: 1 1 20%;
   }
 
   .contactctn {
     display: flex;
     flex-wrap: wrap;
-    margin: 60px 320px;
+    margin: 60px 18%;
     justify-content: center;
     align-items: center;
     flex: 1 1 60%;
   }
 
   .contactctn h1 {
-    padding: auto;
-    margin: 60px 10%;
+    font-size: 70px;
+    text-align: center;
   }
 }
