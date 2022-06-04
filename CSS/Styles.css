@@ -55,6 +55,20 @@ ul {
   line-height: 24px;
 }
 
+.navlinks li::after {
+  content: "";
+  width: 0;
+  height: 2px;
+  background-color: #1a2236;
+  display: block;
+  margin: auto;
+  transition: all 250ms ease-out;
+}
+
+.navlinks li:hover:after {
+  width: 100%;
+}
+
 .menu a {
   display: inline-block;
   margin: 1em;
