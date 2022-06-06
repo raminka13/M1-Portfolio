@@ -65,7 +65,7 @@ ul {
   transition: all 250ms ease-out;
 }
 
-.navlinks li:hover:after {
+.navlinks li:hover::after {
   width: 100%;
 }
 
