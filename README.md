@@ -10,6 +10,9 @@
 - **GitHub flow:**  Correct use of Branches for deployment and features development.
 - **Linters Check:** Local and Pull Request check for errors, bugs and stylistic errors in code.
 
+## Live Demo 
+
+[Live Demo Link](https://raminka13.github.io/M1-Portfolio/)
 
 ## Authors
 
