@@ -167,15 +167,15 @@ ul {
 .decoimgdsktp {
   display: none;
   width: auto;
-  height: auto;
+  height: 100vh;
   max-height: 810px;
   max-width: 603px;
   background-image: url(../Images/image-geometry_1-dsktp.svg);
   background-repeat: no-repeat;
   background-color: #fff;
-  background-position: center;
-  background-size: cover;
-  flex: 1 1 50%;
+  background-position: center top;
+  background-size: contain;
+  flex: 1 1 60%;
 }
 
 .works {
@@ -513,9 +513,10 @@ textarea {
 
   .homesection {
     padding-top: 65px;
+    padding-bottom: 30px;
     margin-bottom: 60px;
     flex-wrap: nowrap;
-    height: 100vh;
+    height: auto;
   }
 
   .homewrp,
@@ -555,6 +556,7 @@ textarea {
   }
 
   .works {
+    margin-top: 30px;
     padding-top: 120px;
   }
 
@@ -697,9 +699,10 @@ textarea {
   }
 
   .contact {
-    height: 90vh;
+    height: auto;
     flex-wrap: nowrap;
     margin-top: 180px;
+    margin-bottom: 0;
   }
 
   .topimg {
