@@ -26,6 +26,7 @@
 ## Collaborators
 
 - [Luca Benavente](https://github.com/lucabenaventew)
+- [Muhammad Ashraf](https://github.com/for-ashraf)
 
 
 ## Project Milestones
