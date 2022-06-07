@@ -65,7 +65,7 @@ ul {
   transition: all 250ms ease-out;
 }
 
-.navlinks li:hover:after {
+.navlinks li:hover::after {
   width: 100%;
 }
 
@@ -513,9 +513,10 @@ textarea {
 
   .homesection {
     padding-top: 65px;
+    padding-bottom: 30px;
     margin-bottom: 60px;
     flex-wrap: nowrap;
-    height: 100vh;
+    height: auto;
   }
 
   .homewrp,
@@ -555,6 +556,7 @@ textarea {
   }
 
   .works {
+    margin-top: 30px;
     padding-top: 120px;
   }
 
@@ -697,9 +699,10 @@ textarea {
   }
 
   .contact {
-    height: 90vh;
+    height: auto;
     flex-wrap: nowrap;
     margin-top: 180px;
+    margin-bottom: 0;
   }
 
   .topimg {
