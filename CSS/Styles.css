@@ -40,10 +40,11 @@ ul {
   height: 100%;
   text-align: center;
   background-color: #fff;
-  background-image: url(/Images/mobile-menu-geometric1.svg),
-  url(/Images/mobile-menu-geometric.svg),
-  url(/Images/menu-dots.svg),
-  url(/Images/menu-dots.svg);
+  background-image:
+    url(/Images/mobile-menu-geometric1.svg),
+    url(/Images/mobile-menu-geometric.svg),
+    url(/Images/menu-dots.svg),
+    url(/Images/menu-dots.svg);
   background-repeat: no-repeat;
   background-position: top left, bottom center, top 10% right 20%, bottom 30% left 20%;
   background-size: 30%, 100%, 15%, 15%;
@@ -90,7 +91,7 @@ ul {
   transition: all 250ms ease-out;
 }
 
-.navlinks li:hover:after {
+.navlinks li:hover::after {
   width: 100%;
 }
 
