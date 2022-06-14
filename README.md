@@ -30,6 +30,7 @@
 - [Karla Delgado](https://github.com/karlavdelgadof)
 
 
+
 ## Project Milestones
 
 
@@ -40,6 +41,7 @@
 - Application deploy ✅
 - Evaluate accessibility __(pair programming)__ ✅
 - Mobile menu __(pair programming)__ ⚙️🔩🛠 **Current Milestone**
+
 - Details modal __(pair programming)__
 - Validate contact form __(pair programming)__
 - Preserve data in the browser __(pair programming)__
