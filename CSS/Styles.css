@@ -37,14 +37,14 @@ ul {
   position: fixed;
   top: -100%;
   width: 100%;
-  height: 100%;
+  height: 50%;
   text-align: center;
   background-color: #fff;
   background-image:
-    url(/Images/mobile-menu-geometric1.svg),
-    url(/Images/mobile-menu-geometric.svg),
-    url(/Images/menu-dots.svg),
-    url(/Images/menu-dots.svg);
+    url(../Images/mobile-menu-geometric1.svg),
+    url(../Images/mobile-menu-geometric.svg),
+    url(../Images/menu-dots.svg),
+    url(../Images/menu-dots.svg);
   background-repeat: no-repeat;
   background-position: top left, bottom center, top 10% right 20%, bottom 30% left 20%;
   background-size: 30%, 100%, 15%, 15%;
@@ -54,8 +54,9 @@ ul {
 }
 
 .navlinks.active {
-  opacity: 100%;
+  opacity: 99%;
   top: 0;
+  height: 100vh;
 }
 
 .navlinks ul {
