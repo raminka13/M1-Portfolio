@@ -1,4 +1,4 @@
-![](https://img.shields.io/badge/Microverse-blueviolet)
+![](https://img.shields.io/badge/Microverse-blueviolet) ![](https://img.shields.io/badge/-HTML-orange) ![](https://img.shields.io/badge/-CSS-blue) ![](https://img.shields.io/badge/-JavaScript-yellow)
 
 # Portfolio
 > Practice project developing a personal portfolio in various languages and frameworks. Each milestone is a learning experience.
@@ -27,6 +27,8 @@
 
 - [Luca Benavente](https://github.com/lucabenaventew)
 - [Muhammad Ashraf](https://github.com/for-ashraf)
+- [Karla Delgado](https://github.com/karlavdelgadof)
+
 
 
 ## Project Milestones
@@ -37,8 +39,9 @@
 - Contact form __(pair programming)__ ✅
 - Desktop version ✅
 - Application deploy ✅
-- Evaluate accessibility __(pair programming)__ ⚙️🔩🛠 **Current Milestone**
-- Mobile menu __(pair programming)__
+- Evaluate accessibility __(pair programming)__ ✅
+- Mobile menu __(pair programming)__ ⚙️🔩🛠 **Current Milestone**
+
 - Details modal __(pair programming)__
 - Validate contact form __(pair programming)__
 - Preserve data in the browser __(pair programming)__
