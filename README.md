@@ -40,9 +40,8 @@
 - Desktop version ✅
 - Application deploy ✅
 - Evaluate accessibility __(pair programming)__ ✅
-- Mobile menu __(pair programming)__ ⚙️🔩🛠 **Current Milestone**
-
-- Details modal __(pair programming)__
+- Mobile menu __(pair programming)__ 
+- Details modal __(pair programming)__ ⚙️🔩🛠 **Current Milestone** ⚙️🔩🛠
 - Validate contact form __(pair programming)__
 - Preserve data in the browser __(pair programming)__
 

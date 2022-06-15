@@ -72,8 +72,8 @@ function createProject(project) {
   projDiv.className = 'project';
   projDiv.dataset.proj = project.pId;
 
-  projDeco.className = ('deco' + project.pId + 2);
-  projDeco1.className = ('deco' + project.pId + 3);
+  projDeco.className = 'deco' + (project.pId + 2);
+  projDeco1.className = 'deco' + (project.pId + 3);
 
   img.src = project.pImg;
   img.alt = project.pName;
