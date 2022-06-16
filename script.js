@@ -242,3 +242,8 @@ document.querySelectorAll('.mobile-menu-close').forEach((n) => n
     mobMenu.classList.remove('active');
     overlayMenu.classList.remove('active');
   }));
+
+const subBtn = document.getElementById('submitbtn');
+const errMsg = document.getElementById('error_msg');
+const mailForm = document.getElementById('email-address');
+

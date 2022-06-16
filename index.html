@@ -122,20 +122,21 @@
                 <p class="mtext" >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
             </div>
             <form action="https://formspree.io/f/mayvvvnd" method="POST">
-                <ul class="contactform">
+                <ul id="contacform" class="contactform">
                     <li>
                     <label for="fname">Your name</label>
                         <input type="text" name="name" id="fname" placeholder="Jhon Doe*" required="" maxlength="30" pattern="([A-ZΆ-ΫÀ-ÖØ-Þ][A-ZΆ-ΫÀ-ÖØ-Þa-zά-ώß-öø-ÿ]{1,19} ?){1,10}">
                     </li>
                     <li>
                     <label for="email-address">Your email</label>
-                        <input type="email" name="email" id="email-address" placeholder="email@domain.com*" required="" pattern="(?!(^[.-].*|[^@]*[.-]@|.*\.{2,}.*)|^.{254}.)([a-zA-Z0-9!#$%&'*+\/=?^_`{|}~.-]+@)(?!-.*|.*-\.)([a-zA-Z0-9-]{1,63}\.)+[a-zA-Z]{2,15}">
+                        <input class="email" type="email" name="email" id="email-address" placeholder="email@domain.com*" required="" pattern="(?!(^[.-].*|[^@]*[.-]@|.*\.{2,}.*)|^.{254}.)([a-zA-Z0-9!#$%&'*+\/=?^_`{|}~.-]+@)(?!-.*|.*-\.)([a-zA-Z0-9-]{1,63}\.)+[a-zA-Z]{2,15}">
                     </li>
                     <li>
                     <textarea rows="4" name="message" id="message" placeholder="Enter your message here...&#10;*All field required" required="" maxlength="500"></textarea>
                     </li>
                 </ul>
-                <button class="collabbutton" type="submit">Start collaboration</button>
+                <span class="formmsgs" id="error_msg"></span>
+                <button id="submitbtn" class="collabbutton" type="submit">Start collaboration</button>
             </form>
         </div>
         <div class="bottomimg"></div>
