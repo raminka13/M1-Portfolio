@@ -405,16 +405,17 @@ ul {
 .modal-overlay {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   position: fixed;
   top: 0;
   left: -100%;
   z-index: 99;
   height: 100%;
   width: 100%;
-  background-color: #1a2236;
+  background-color: #fff;
   opacity: 60%;
   overflow-y: auto;
+  overflow-x: hidden;
   transition: all 500ms ease-in-out;
 }
 
@@ -429,10 +430,10 @@ ul {
   flex-direction: column;
   box-sizing: border-box;
   background-color: #fff;
-  margin: auto;
-  height: max-content;
+  margin: 0;
+  height: fit-content;
   padding: 0;
-  width: 98%;
+  width: 100%;
 }
 
 .projtxt-mod {
@@ -870,6 +871,7 @@ textarea {
   }
 
   .modal-overlay {
+    align-items: center;
     background-color: #1a2236;
   }
 

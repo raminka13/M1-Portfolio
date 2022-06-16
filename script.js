@@ -79,7 +79,7 @@ function createProject(project) {
   img.alt = project.pName;
   img.className = 'projectimg';
 
-  if (project.pId === 1 || project.pId === 6) {
+  if (project.pId % 3 === 0 || project.pId === 1) {
     pWrp.className = 'projectwrp mproj';
   } else {
     pWrp.className = 'projectwrp';
