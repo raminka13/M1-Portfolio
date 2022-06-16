@@ -690,6 +690,10 @@ textarea {
   width: auto;
 }
 
+.email_error {
+  background-color: #e2505c;
+}
+
 @media screen and (min-width: 768px) {
   .nav {
     box-shadow: 0 0.5px 0 #dddfe6;
