@@ -55,7 +55,7 @@ const projectsArr = [
   },
 ];
 
-/////// projects ///////
+/// //// projects ///////
 const projContainer = document.getElementById('projects');
 
 function createProject(project) {
@@ -72,14 +72,14 @@ function createProject(project) {
 
   projDiv.className = 'project';
 
-  projDeco.className = 'deco' + (project.pId + 2);
-  projDeco1.className = 'deco' + (project.pId + 3);
+  projDeco.className = `deco${project.pId + 2}`;
+  projDeco1.className = `deco${project.pId + 3}`;
 
   img.src = project.pImg;
   img.alt = project.pName;
   img.className = 'projectimg';
 
-  if (project.pId == 1 || project.pId == 6) {
+  if (project.pId === 1 || project.pId === 6) {
     pWrp.className = 'projectwrp mproj';
   } else {
     pWrp.className = 'projectwrp';
@@ -117,11 +117,13 @@ function createProject(project) {
 }
 projectsArr.forEach(createProject);
 
-////// modal //////////
+/// /// modal //////////
 const overlayModal = document.querySelector('.modal-overlay');
+function closeModal() {
+  overlayModal.classList.remove('active');
+}
 
 function createModal(id) {
-  projectIdModal = id;
   const project = projectsArr.find((project) => Number(project.pId) === Number(id));
   const modCont = document.createElement('div');
   const modName = document.createElement('h2');
@@ -140,12 +142,12 @@ function createModal(id) {
   btnClose.className = 'modal-menu-close';
   btnClose.addEventListener('click', closeModal);
 
-    for(let i = 0; i < 3 ; i += 1){
-      const bar = document.createElement('span');
-      bar.className = 'bar';
-      btnClose.appendChild(bar);
-    };
-  
+  for (let i = 0; i < 3; i += 1) {
+    const bar = document.createElement('span');
+    bar.className = 'bar';
+    btnClose.appendChild(bar);
+  }
+
   modCont.className = 'proj-wrp-mod';
   modCont.appendChild(modName);
 
@@ -199,15 +201,11 @@ function cleanModal() {
 
 function openModal() {
   overlayModal.classList.toggle('active');
-  window.onclick = function(event) {
+  window.onclick = (event) => {
     if (event.target === overlayModal) {
       overlayModal.classList.remove('active');
     }
-  }
-}
-
-function closeModal() {
-  overlayModal.classList.remove('active');
+  };
 }
 
 projContainer.addEventListener('click', (e) => {
@@ -217,7 +215,7 @@ projContainer.addEventListener('click', (e) => {
     createModal(elementId);
     openModal();
   }
-})
+});
 
 const mobMenu = document.querySelector('.mobile-menu');
 const overlayMenu = document.querySelector('.navlinks');
@@ -244,4 +242,3 @@ document.querySelectorAll('.mobile-menu-close').forEach((n) => n
     mobMenu.classList.remove('active');
     overlayMenu.classList.remove('active');
   }));
-
