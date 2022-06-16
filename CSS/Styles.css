@@ -407,20 +407,20 @@ ul {
   justify-content: center;
   align-items: center;
   position: fixed;
-  top: -100vh;
-  left: 0;
+  top: 0;
+  left: -100%;
   z-index: 99;
   height: 100%;
   width: 100%;
-  background-color: #fff;
-  opacity: 50%;
-  overflow: hidden;
+  background-color: #1a2236;
+  opacity: 60%;
+  overflow-y: auto;
   transition: all 500ms ease-in-out;
 }
 
 .modal-overlay.active {
   opacity: 100%;
-  top: 0;
+  left: 0;
 }
 
 .proj-wrp-mod {
@@ -703,8 +703,8 @@ textarea {
   }
 
   .modal-menu-close {
-    right: 4em;
-    top: 3em;
+    right: 9%;
+    top: 6%;
   }
 
   .navlinks {
@@ -806,15 +806,11 @@ textarea {
 
   .projectwrp {
     display: none;
-  }
-
-  .mproj {
-    width: auto;
-    grid-column: span 4;
+    grid-column: span 6;
     grid-row: span 2;
   }
 
-  .mproj .projectwrp {
+  .mproj {
     display: block;
   }
 
