@@ -15,6 +15,10 @@ body {
   z-index: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
 ul {
   list-style: none;
 }
@@ -110,6 +114,14 @@ ul {
   top: 1em;
 }
 
+.modal-menu-close {
+  display: block;
+  cursor: pointer;
+  position: absolute;
+  right: 1.5em;
+  top: 1em;
+}
+
 .mobile-menu-close.active {
   cursor: pointer;
   position: absolute;
@@ -127,15 +139,18 @@ ul {
   transition: all 250ms ease-in-out;
 }
 
+.modal-menu-close .bar:nth-child(1),
 .mobile-menu-close .bar:nth-child(1) {
   background-color: #e45865;
   transform: translateY(8px) rotate(45deg);
 }
 
+.modal-menu-close .bar:nth-child(2),
 .mobile-menu-close .bar:nth-child(2) {
   opacity: 0;
 }
 
+.modal-menu-close .bar:nth-child(3),
 .mobile-menu-close .bar:nth-child(3) {
   transform: translateY(-8px) rotate(-45deg);
   background-color: #febf52;
@@ -327,22 +342,28 @@ ul {
 .projbtn,
 .projbtn-mod,
 .projbtn-mod-src {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-image: url(../Images/arrow.png);
   background-color: #1a2236;
   background-repeat: no-repeat;
   background-position: center right 12px;
   background-size: 20px;
   margin: 1em 0 1.25em 1.2em;
-  padding: 9px 45px 9px 9px;
   box-sizing: border-box;
   cursor: pointer;
   height: 50px;
+  width: fit-content;
+  padding-left: 2em;
+  padding-right: 5em;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
   text-align: center;
+  vertical-align: middle;
   color: #fff;
   border: 1px solid #fff;
 }
@@ -382,17 +403,30 @@ ul {
 }
 
 .modal-overlay {
-  display: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: fixed;
-  top: 0;
+  top: -100vh;
   left: 0;
   z-index: 99;
   height: 100%;
   width: 100%;
   background-color: #fff;
+  opacity: 50%;
+  overflow: hidden;
+  transition: all 500ms ease-in-out;
+}
+
+.modal-overlay.active {
+  opacity: 100%;
+  top: 0;
 }
 
 .proj-wrp-mod {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
   box-sizing: border-box;
   background-color: #fff;
   margin: auto;
@@ -444,9 +478,10 @@ ul {
 }
 
 .projectimg-mod {
-  margin: 1.5em auto;
+  margin: 1em auto;
   width: 100%;
   height: auto;
+  align-self: center;
 }
 
 .mod-wrpr {
@@ -667,6 +702,11 @@ textarea {
     display: none;
   }
 
+  .modal-menu-close {
+    right: 4em;
+    top: 3em;
+  }
+
   .navlinks {
     position: relative;
     height: 60px;
@@ -844,19 +884,19 @@ textarea {
 
   .projtxt-mod {
     font-weight: 700;
-    padding-top: 1.5em;
+    padding-top: 0;
   }
 
   .projectimg-mod {
-    margin: 0.5em 10%;
-    width: 80%;
-    height: auto;
+    margin: 1.5em;
+    height: 80%;
+    width: auto;
   }
 
   .projbtn-mod,
   .projbtn-mod-src {
-    text-align: left;
-    padding: 0 0 0 1em;
+    padding-left: 2em;
+    justify-content: flex-start;
   }
 
   .about {
