@@ -430,9 +430,9 @@ ul {
   box-sizing: border-box;
   background-color: #fff;
   margin: auto;
+  height: max-content;
   padding: 0;
-  width: 99%;
-  height: 99%;
+  width: 98%;
 }
 
 .projtxt-mod {
