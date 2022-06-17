@@ -55,8 +55,16 @@ const projectsArr = [
   },
 ];
 
-/// //// projects ///////
+// Projects
 const projContainer = document.getElementById('projects');
+const projTitle = document.createElement('div');
+const pTitle = document.createElement('h1');
+
+projContainer.appendChild(projTitle);
+projTitle.className = 'projtitle';
+projTitle.appendChild(pTitle);
+pTitle.className = 'mtitle';
+pTitle.textContent = 'Projects';
 
 function createProject(project) {
   const projDiv = document.createElement('div');
@@ -78,8 +86,9 @@ function createProject(project) {
   img.src = project.pImg;
   img.alt = project.pName;
   img.className = 'projectimg';
+  img.dataset.projnum = project.pId;
 
-  if (project.pId % 3 === 0 || project.pId === 1) {
+  if (project.pId === 1) {
     pWrp.className = 'projectwrp mproj';
   } else {
     pWrp.className = 'projectwrp';
@@ -105,7 +114,7 @@ function createProject(project) {
 
   pBtn.textContent = 'See this project';
   pBtn.className = 'projbtn';
-  pBtn.setAttribute('id', project.pId);
+  pBtn.dataset.projnum = project.pId;
 
   projContainer.appendChild(projDiv);
   projContainer.appendChild(projDeco);
@@ -117,7 +126,7 @@ function createProject(project) {
 }
 projectsArr.forEach(createProject);
 
-/// /// modal //////////
+// Modal
 const overlayModal = document.querySelector('.modal-overlay');
 function closeModal() {
   overlayModal.classList.remove('active');
@@ -192,6 +201,7 @@ function createModal(id) {
   modText.appendChild(srcBtn);
 }
 
+// Modal Operations
 function cleanModal() {
   const div = overlayModal;
   while (div.firstChild) {
@@ -209,24 +219,19 @@ function openModal() {
 }
 
 projContainer.addEventListener('click', (e) => {
-  const elementId = e.target.id;
-  if (e.target.classList.contains('projbtn')) {
+  const elementId = e.target.dataset.projnum;
+  if (e.target.classList.contains('projbtn') || e.target.classList.contains('projectimg')) {
     cleanModal(overlayModal.id);
     createModal(elementId);
     openModal();
   }
 });
 
+// Mobile Menu
 const mobMenu = document.querySelector('.mobile-menu');
 const overlayMenu = document.querySelector('.navlinks');
-const closeB = document.querySelector('.mobile-menu-close');
 
 mobMenu.addEventListener('click', () => {
-  mobMenu.classList.toggle('active');
-  overlayMenu.classList.toggle('active');
-});
-
-closeB.addEventListener('click', () => {
   mobMenu.classList.toggle('active');
   overlayMenu.classList.toggle('active');
 });
@@ -237,12 +242,13 @@ document.querySelectorAll('.nav-link').forEach((n) => n
     overlayMenu.classList.remove('active');
   }));
 
-document.querySelectorAll('.mobile-menu-close').forEach((n) => n
+document.querySelectorAll('.navlinks').forEach((n) => n
   .addEventListener('click', () => {
     mobMenu.classList.remove('active');
     overlayMenu.classList.remove('active');
   }));
 
+// Form Validation
 const subBtn = document.getElementById('submitbtn');
 const errMsg = document.getElementById('error_msg');
 const mailForm = document.getElementById('email-address');
