@@ -1,21 +1,21 @@
 const projectsArr = [
   {
     pId: 1,
-    pName: 'Project One',
-    tags: ['HTML/CSS', 'Ruby On Rails', 'Bootstrap'],
-    pImg: './Images/project1.jpg',
-    pText: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean consequat tincidunt mattis. Sed ornare sapien lacus, nec placerat leo tempus sed. Curabitur ac augue tincidunt mattis. Sed ornare sapien lacus, nec placerat leo tempus sed. Curabitur ac augue. tincidunt mattis. Sed ornare sapien lacus, nec placerat leo tempus sed. Curabitur ac augue.',
-    btnLive: 'https://raminka13.github.io/M1-Portfolio/',
-    btnSrc: 'https://github.com/raminka13/M1-Portfolio',
+    pName: 'ToDo App',
+    tags: ['HTML/CSS', 'JavaScript', 'Webpack'],
+    pImg: './Images/ToDoApp.png',
+    pText: 'Great App to save things to do. A great project for learning Javascript and Webpack bundling.',
+    btnLive: 'https://raminka13.github.io/todo-app/dist/',
+    btnSrc: 'https://github.com/raminka13//todo-app/',
   },
   {
     pId: 2,
-    pName: 'Project Two',
-    tags: ['HTML/CSS', 'Ruby On Rails', 'Javascript'],
-    pImg: './Images/project2.jpg',
-    pText: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean consequat tincidunt mattis. Sed ornare sapien lacus, nec placerat leo tempus sed. Curabitur ac augue',
-    btnLive: 'https://raminka13.github.io/M1-Portfolio/',
-    btnSrc: 'https://github.com/raminka13/M1-Portfolio',
+    pName: 'Booklist App',
+    tags: ['HTML/CSS', 'JavaScript', 'SPA'],
+    pImg: './Images/BooksListApp.png',
+    pText: 'With this great app you can make a list of books to read later.',
+    btnLive: 'https://raminka13.github.io/booklistapp-es6-modules/',
+    btnSrc: 'https://raminka13.github.io/booklistapp-es6-modules/',
   },
   {
     pId: 3,
@@ -80,8 +80,8 @@ function createProject(project) {
 
   projDiv.className = 'project';
 
-  projDeco.className = `deco${project.pId + 2}`;
-  projDeco1.className = `deco${project.pId + 3}`;
+  projDeco.className = `deco${Math.floor(Math.random() * 10)}`;
+  projDeco1.className = `deco${Math.floor(Math.random() * 10)}`;
 
   img.src = project.pImg;
   img.alt = project.pName;
@@ -242,11 +242,10 @@ document.querySelectorAll('.nav-link').forEach((n) => n
     overlayMenu.classList.remove('active');
   }));
 
-document.querySelectorAll('.navlinks').forEach((n) => n
-  .addEventListener('click', () => {
-    mobMenu.classList.remove('active');
-    overlayMenu.classList.remove('active');
-  }));
+document.querySelector('.navlinks').addEventListener('click', () => {
+  mobMenu.classList.remove('active');
+  overlayMenu.classList.remove('active');
+});
 
 // Form Validation
 const subBtn = document.getElementById('submitbtn');
@@ -263,3 +262,39 @@ subBtn.onclick = (event) => {
     event.preventDefault();
   }
 };
+
+// Local Storage
+const ctcForm = document.getElementById('contact');
+const ctcName = document.getElementById('fname');
+const ctcMsg = document.getElementById('message');
+
+let strData;
+
+ctcForm.addEventListener('input', () => {
+  const ctcNameVal = ctcName.value;
+  const ctcMailValue = mailForm.value;
+  const ctcMsgValue = ctcMsg.value;
+
+  mailForm.classList.remove('email_error');
+  errMsg.textContent = '';
+
+  if (!ctcNameVal && !ctcMailValue && !ctcMsgValue) {
+    return;
+  }
+
+  strData = {
+    ctcNameVal,
+    ctcMailValue,
+    ctcMsgValue,
+  };
+
+  localStorage.setItem('strData', JSON.stringify(strData));
+});
+
+strData = JSON.parse(localStorage.getItem('strData'));
+
+if (strData) {
+  ctcName.value = strData.ctcNameVal;
+  mailForm.value = strData.ctcMailValue;
+  ctcMsg.value = strData.ctcMailValue;
+}

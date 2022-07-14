@@ -1,6 +1,8 @@
 * {
   font-family: 'Playfair Display', serif;
   font-family: 'Poppins', sans-serif;
+  text-decoration: none;
+  list-style: none;
 }
 
 html {
@@ -13,14 +15,6 @@ body {
   padding: 0;
   width: 100vw;
   z-index: 0;
-}
-
-a {
-  text-decoration: none;
-}
-
-ul {
-  list-style: none;
 }
 
 .nav {
@@ -100,14 +94,15 @@ ul {
   width: 100%;
 }
 
-.mobile-menu {
+div.mobile-menu {
   cursor: pointer;
   position: absolute;
   right: 1.5em;
   top: 1em;
+  z-index: 199;
 }
 
-.modal-menu-close {
+div.modal-menu-close {
   display: block;
   cursor: pointer;
   position: absolute;
@@ -115,7 +110,7 @@ ul {
   top: 1em;
 }
 
-.bar {
+span.bar {
   display: block;
   width: 25px;
   height: 3px;
@@ -126,25 +121,32 @@ ul {
   transition: all 750ms ease-out;
 }
 
-.modal-menu-close .bar:nth-child(1),
-.mobile-menu.active .bar:nth-child(1) {
+div.modal-menu-close span.bar:nth-child(1) {
   background-color: #e45865;
   transform: translateY(8px) rotate(135deg);
 }
 
-.modal-menu-close > .bar:nth-child(2),
-.mobile-menu.active .bar:nth-child(2) {
+div.modal-menu-close span.bar:nth-child(2) {
   opacity: 0;
 }
 
-.modal-menu-close .bar:nth-child(3),
-.mobile-menu.active .bar:nth-child(3) {
-  transform: translateY(-8px) rotate(-135deg);
+div.modal-menu-close span.bar:nth-child(3) {
   background-color: #e45865;
+  transform: translateY(-8px) rotate(-135deg);
 }
 
-.mobile-menu.active {
-  z-index: 101;
+div.mobile-menu.active span.bar:nth-child(1) {
+  background-color: #e45865;
+  transform: translateY(8px) rotate(135deg);
+}
+
+div.mobile-menu.active span.bar:nth-child(2) {
+  opacity: 0;
+}
+
+div.mobile-menu.active span.bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-135deg);
+  background-color: #e45865;
 }
 
 .homesection {
@@ -265,6 +267,7 @@ ul {
   width: auto;
 }
 
+.deco0,
 .deco1,
 .deco2,
 .deco3,
@@ -473,8 +476,9 @@ ul {
 
 .projectimg-mod {
   margin: 1em auto;
-  width: 100%;
-  height: auto;
+  width: 90%;
+  max-width: 700px;
+  height: 450px;
   align-self: center;
 }
 
@@ -587,6 +591,10 @@ ul {
   display: inline-flex;
   flex-wrap: wrap;
   justify-content: center;
+}
+
+#inputsform {
+  display: flex;
 }
 
 .contactform {
@@ -805,6 +813,7 @@ textarea {
     display: block;
   }
 
+  .deco0,
   .deco1,
   .deco2,
   .deco3,
