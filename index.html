@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="./CSS/Styles.css">
     <title>Raminka Portfolio</title>
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
 </head>
 <body>
     <header>
@@ -20,11 +20,6 @@
                 <span class="bar"></span>
             </div>
             <div class="navlinks">
-                <div class="mobile-menu-close">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                </div>
                 <ul>
                     <li><a class="nav-link" href="#home">Hello</a></li>
                     <li><a class="nav-link" href="#works">Portfolio</a></li>
@@ -37,7 +32,7 @@
     <section class="homesection" id="home">
         <div class="homewrp">
             <div class="maintitle">
-                <h1 class="mtitle" >Charlie Giorgania</h1>
+                <h1 class="mtitle" >Raul Ospina</h1>
             </div>
             <div class="maintxt">
                 <p class="mtext" >Hello! I am a software developer! I can help you build a product, feature or website. Taka a look of my works. If you like what you see and have a project you need coded, don’t hesitate and contact me.</p>
@@ -48,13 +43,10 @@
         <div class="decoimg"></div>
     </section>
 
-    <section id="works">
-        <div class="projtitle">
-            <h1 class="mtitle">Projects</h1>
-        </div>
+    <div id="works">
         <div class="works" id="projects"></div>
         <div class="modal-overlay"></div>
-    </section>
+    </div>
 
     <section class="about" id="about">
         <div class="aboutwrpr">
@@ -121,7 +113,7 @@
             <div class="maintxt">
                 <p class="mtext" >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
             </div>
-            <form action="https://formspree.io/f/mayvvvnd" method="POST">
+            <form id="inputsform" action="https://formspree.io/f/mayvvvnd" method="POST">
                 <ul id="contacform" class="contactform">
                     <li>
                     <label for="fname">Your name</label>

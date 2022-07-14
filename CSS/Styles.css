@@ -1,6 +1,8 @@
 * {
   font-family: 'Playfair Display', serif;
   font-family: 'Poppins', sans-serif;
+  text-decoration: none;
+  list-style: none;
 }
 
 html {
@@ -13,14 +15,6 @@ body {
   padding: 0;
   width: 100vw;
   z-index: 0;
-}
-
-a {
-  text-decoration: none;
-}
-
-ul {
-  list-style: none;
 }
 
 .nav {
@@ -100,21 +94,15 @@ ul {
   width: 100%;
 }
 
-.mobile-menu {
+div.mobile-menu {
   cursor: pointer;
   position: absolute;
   right: 1.5em;
   top: 1em;
+  z-index: 199;
 }
 
-.mobile-menu-close {
-  cursor: pointer;
-  position: absolute;
-  right: 1.5em;
-  top: 1em;
-}
-
-.modal-menu-close {
+div.modal-menu-close {
   display: block;
   cursor: pointer;
   position: absolute;
@@ -122,38 +110,43 @@ ul {
   top: 1em;
 }
 
-.mobile-menu-close.active {
-  cursor: pointer;
-  position: absolute;
-  right: 1.5em;
-  top: 1em;
-}
-
-.bar {
+span.bar {
   display: block;
   width: 25px;
   height: 3px;
   margin: 5px auto;
+  opacity: 99%;
   background-color: #1a2236;
-  -webkit-transition: all 1s ease-in-out;
-  transition: all 250ms ease-in-out;
+  -webkit-transition: all 750ms ease-out;
+  transition: all 750ms ease-out;
 }
 
-.modal-menu-close .bar:nth-child(1),
-.mobile-menu-close .bar:nth-child(1) {
+div.modal-menu-close span.bar:nth-child(1) {
   background-color: #e45865;
-  transform: translateY(8px) rotate(45deg);
+  transform: translateY(8px) rotate(135deg);
 }
 
-.modal-menu-close .bar:nth-child(2),
-.mobile-menu-close .bar:nth-child(2) {
+div.modal-menu-close span.bar:nth-child(2) {
   opacity: 0;
 }
 
-.modal-menu-close .bar:nth-child(3),
-.mobile-menu-close .bar:nth-child(3) {
-  transform: translateY(-8px) rotate(-45deg);
-  background-color: #febf52;
+div.modal-menu-close span.bar:nth-child(3) {
+  background-color: #e45865;
+  transform: translateY(-8px) rotate(-135deg);
+}
+
+div.mobile-menu.active span.bar:nth-child(1) {
+  background-color: #e45865;
+  transform: translateY(8px) rotate(135deg);
+}
+
+div.mobile-menu.active span.bar:nth-child(2) {
+  opacity: 0;
+}
+
+div.mobile-menu.active span.bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-135deg);
+  background-color: #e45865;
 }
 
 .homesection {
@@ -252,7 +245,7 @@ ul {
   background-image: url(../Images/image-geometry_1-dsktp.svg);
   background-repeat: no-repeat;
   background-color: #fff;
-  background-position: center top;
+  background-position: center center;
   background-size: contain;
   flex: 1 1 60%;
 }
@@ -274,6 +267,7 @@ ul {
   width: auto;
 }
 
+.deco0,
 .deco1,
 .deco2,
 .deco3,
@@ -282,6 +276,7 @@ ul {
 }
 
 .project {
+  width: 100%;
   grid-column: span 12;
   display: flex;
   flex-wrap: wrap;
@@ -412,14 +407,15 @@ ul {
   z-index: 99;
   height: 100%;
   width: 100%;
-  background-color: #fff;
-  opacity: 60%;
+  background-color: #1c528a;
+  opacity: 40%;
   overflow-y: auto;
   overflow-x: hidden;
-  transition: all 500ms ease-in-out;
+  transition: all 250ms ease-in-out;
 }
 
 .modal-overlay.active {
+  background-color: #fff;
   opacity: 100%;
   left: 0;
 }
@@ -480,8 +476,9 @@ ul {
 
 .projectimg-mod {
   margin: 1em auto;
-  width: 100%;
-  height: auto;
+  width: 90%;
+  max-width: 700px;
+  height: 450px;
   align-self: center;
 }
 
@@ -596,6 +593,10 @@ ul {
   justify-content: center;
 }
 
+#inputsform {
+  display: flex;
+}
+
 .contactform {
   display: flex;
   flex-wrap: wrap;
@@ -702,14 +703,8 @@ textarea {
     align-items: center;
   }
 
-  .mobile-menu,
-  .mobile-menu-close {
+  .mobile-menu {
     display: none;
-  }
-
-  .modal-menu-close {
-    right: 9%;
-    top: 6%;
   }
 
   .navlinks {
@@ -789,18 +784,17 @@ textarea {
 
   .project {
     width: auto;
-    grid-column: span 6;
+    grid-column: span 4;
     grid-row: span 1;
   }
 
   .projtitle {
-    margin: 0;
-    padding: 0;
-    flex: 0 1 20%;
-    width: 25%;
+    width: auto;
     background-image: url(../Images/image_dots.svg);
     background-repeat: no-repeat;
     background-position: right top;
+    grid-column: span 5;
+    grid-row: span 1;
   }
 
   .projtitle h1 {
@@ -819,6 +813,7 @@ textarea {
     display: block;
   }
 
+  .deco0,
   .deco1,
   .deco2,
   .deco3,
@@ -834,7 +829,7 @@ textarea {
     grid-column: span 2;
     grid-row: span 1;
     background-image: url(../Images/deco2.png);
-    background-repeat: repeat;
+    background-repeat: no-repeat;
     background-position: top left;
     background-size: contain;
   }
@@ -848,11 +843,10 @@ textarea {
   .deco3,
   .deco6 {
     background-image: url(../Images/deco3.png);
-    grid-column: span 3;
+    grid-column: span 2;
     grid-row: span 1;
-    background-size: contain;
     background-repeat: no-repeat;
-    background-position: bottom right;
+    background-position: top center;
   }
 
   .deco4,
@@ -862,7 +856,6 @@ textarea {
     background-repeat: no-repeat;
     grid-column: span 1;
     grid-row: span 1;
-    background-size: contain;
   }
 
   .deco5,
@@ -870,11 +863,11 @@ textarea {
     grid-column: span 1;
     background-image: url(../Images/deco5.png);
     background-position: top;
-    background-size: contain;
     background-repeat: no-repeat;
   }
 
-  .modal-overlay {
+  .modal-overlay,
+  .modal-overlay.active {
     align-items: center;
     background-color: #1a2236;
   }
@@ -892,7 +885,7 @@ textarea {
   .projectimg-mod {
     margin: 1.5em;
     height: 80%;
-    width: auto;
+    width: 100%;
   }
 
   .projbtn-mod,
