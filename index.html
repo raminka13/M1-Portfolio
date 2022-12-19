@@ -1,153 +1,247 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="./CSS/Styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./CSS/Styles.css" />
     <title>Raminka Portfolio</title>
-    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
-</head>
-<body>
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
     <header>
-        <nav class="nav">
-            <div class="mobile-menu">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-            <div class="navlinks">
-                <ul>
-                    <li><a class="nav-link" href="#home">Hello</a></li>
-                    <li><a class="nav-link" href="#works">Portfolio</a></li>
-                    <li><a class="nav-link" href="#about">About</a></li>
-                    <li><a class="nav-link" href="#contact">Contact</a></li>
-                </ul>
-            </div>
-        </nav>
+      <nav class="nav">
+        <div class="mobile-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <div class="navlinks">
+          <ul>
+            <li><a class="nav-link" href="#home">Hello</a></li>
+            <li><a class="nav-link" href="#works">Portfolio</a></li>
+            <li><a class="nav-link" href="#about">About</a></li>
+            <li><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
     </header>
     <section class="homesection" id="home">
-        <div class="homewrp">
-            <div class="maintitle">
-                <h1 class="mtitle" >Raul Ospina</h1>
-            </div>
-            <div class="maintxt">
-                <p class="mtext" >Hello! I am a software developer! I can help you build a product, feature or website. Taka a look of my works. If you like what you see and have a project you need coded, don’t hesitate and contact me.</p>
-            </div>
-            <button type="button" class="collabbutton">Start collaboration</button>
+      <div class="homewrp">
+        <div class="maintitle">
+          <h1 class="mtitle">Raul Ospina</h1>
         </div>
-        <div class="decoimgdsktp"></div>
-        <div class="decoimg"></div>
+        <div class="maintxt">
+          <p class="mtext">
+            Hello! I am a <b>software developer.</b> I'm a problem solver. I can
+            help you build a product, feature or website. <b>Look through
+            some of my work and experience!</b>.
+            Let's start a great project together. Contact Me.<br />
+            <a class="contact-link" href="mailto:raminka13@hotmail.com"
+              >raminka13@hotmail.com</a
+            ><br />
+            <a
+              class="contact-link"
+              href="https://wa.me/+573013368172"
+              target="_blank"
+              >WhatsApp</a
+            ><br />
+            <a class="contact-link" href="tel:+573013368172">+57 301 3368172</a>
+          </p>
+        </div>
+        <a href="#contact" class="collabbutton">Start collaboration</a>
+      </div>
+      <div class="decoimgdsktp"></div>
+      <div class="decoimg"></div>
     </section>
 
     <div id="works">
-        <div class="works" id="projects"></div>
-        <div class="modal-overlay"></div>
+      <div class="works" id="projects"></div>
+      <div class="modal-overlay"></div>
     </div>
 
     <section class="about" id="about">
-        <div class="aboutwrpr">
-            <div class="maintitle">
-            <h1 class="mtitle" >About</h1>
-            </div>
-            <div class="maintxt">
-            <p class="mtext" >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ea eiusmod. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ea eiusmod.</p>
-            </div>
-            <button type="button" class="collabbutton">Get my CV <img src="./Images/ic_download.png" alt="Download CV button"></button>
+      <div class="aboutwrpr">
+        <div class="maintitle">
+          <h1 class="mtitle">About</h1>
         </div>
-        <div class="contain">
-            <div class="card lang">
-                <div class="sectitle">
-                    <h2>Languages</h2>
-                </div>
-                <div class="litxt">
-                <ul>
-                    <li>JavaScript (ES5/ES6)</li>
-                    <li>Ruby</li>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                </ul>
-                </div>
-            </div>
-            <div class="card frames">
-                <div class="sectitle">
-                    <h2>Frameworks</h2>
-                </div>
-                <div class="litxt">
-                <ul>
-                    <li>Bootstrap</li>
-                    <li>Ruby on rails</li>
-                    <li>RSpec</li>
-                    <li>Capibara</li>
-                    <li>Selenium</li>
-                </ul>
-                </div>
-            </div>
-            <div class="card skills">
-                <div class="sectitle">
-                    <h2>Skills</h2>
-                </div>
-                <div class="litxt">
-                <ul>
-                    <li>Codekit</li>
-                    <li>Codepen</li>
-                    <li>GitHub</li>
-                    <li>GitLab</li>
-                    <li>Terminal</li>
-                </ul>
-                </div>
-            </div>
-            <div class="dots"></div>
+        <div class="maintxt">
+          <p class="mtext">
+            I’m a full-stack software developer completing Microverse, an
+            intense, hands-on online programming school that teaches software
+            while cracking real code projects. I have a deep passion for
+            technology and our ability to change lives with code. I am
+            developing great websites and apps with fantastic partners from
+            around the world, in a multicultural environment that encourages
+            kindness and collaboration. I'm a problem solver, I see things
+            differently, connecting experience with knowledge to bring new
+            ideas. My goal is to create great things. But even the greatest
+            things have small beginnings.
+          </p>
         </div>
+        <a href="Resume-Raul_Ospina.pdf" class="collabbutton" target="_blank">
+          Get my CV
+          <img src="./Images/ic_download.png" alt="Download CV button" />
+        </a>
+      </div>
+      <div class="contain">
+        <div class="card lang">
+          <div class="sectitle">
+            <h2>Languages</h2>
+          </div>
+          <div class="litxt">
+            <ul>
+              <li>JavaScript</li>
+              <li>Ruby</li>
+              <li>HTML</li>
+              <li>CSS</li>
+            </ul>
+          </div>
+        </div>
+        <div class="card frames">
+          <div class="sectitle">
+            <h2>Frameworks</h2>
+          </div>
+          <div class="litxt">
+            <ul>
+              <li>Bootstrap</li>
+              <li>Tailwind</li>
+              <li>React</li>
+              <li>Ruby On Rails</li>
+              <li>RSpec</li>
+            </ul>
+          </div>
+        </div>
+        <div class="card skills">
+          <div class="sectitle">
+            <h2>Skills</h2>
+          </div>
+          <div class="litxt">
+            <ul>
+              <li>GitHub</li>
+              <li>Netlify</li>
+              <li>Render</li>
+              <li>ZSH CLI</li>
+            </ul>
+          </div>
+        </div>
+        <div class="dots"></div>
+      </div>
     </section>
-    
+
     <section class="contact" id="contact">
-        <div class="topimg"></div>
-        <div class="contactctn">
-            <div class="maintitle">
-                <h1 class="mtitle" >Get started</h1>
-            </div>
-            <div class="maintxt">
-                <p class="mtext" >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
-            </div>
-            <form id="inputsform" action="https://formspree.io/f/mayvvvnd" method="POST">
-                <ul id="contacform" class="contactform">
-                    <li>
-                    <label for="fname">Your name</label>
-                        <input type="text" name="name" id="fname" placeholder="Jhon Doe*" required="" maxlength="30" pattern="([A-ZΆ-ΫÀ-ÖØ-Þ][A-ZΆ-ΫÀ-ÖØ-Þa-zά-ώß-öø-ÿ]{1,19} ?){1,10}">
-                    </li>
-                    <li>
-                    <label for="email-address">Your email</label>
-                        <input class="email" type="email" name="email" id="email-address" placeholder="email@domain.com*" required="" pattern="(?!(^[.-].*|[^@]*[.-]@|.*\.{2,}.*)|^.{254}.)([a-zA-Z0-9!#$%&'*+\/=?^_`{|}~.-]+@)(?!-.*|.*-\.)([a-zA-Z0-9-]{1,63}\.)+[a-zA-Z]{2,15}">
-                    </li>
-                    <li>
-                    <textarea rows="4" name="message" id="message" placeholder="Enter your message here...&#10;*All field required" required="" maxlength="500"></textarea>
-                    </li>
-                </ul>
-                <span class="formmsgs" id="error_msg"></span>
-                <button id="submitbtn" class="collabbutton" type="submit">Start collaboration</button>
-            </form>
+      <div class="topimg"></div>
+      <div class="contactctn">
+        <div class="maintitle">
+          <h1 class="mtitle">Get started</h1>
         </div>
-        <div class="bottomimg"></div>
+        <div class="maintxt">
+          <p class="mtext">
+            Contact me for a quote or just to say hi! I'll get back to you as soon as possible. I'm looking forward to hearing from you!
+          </p>
+        </div>
+        <form
+          id="inputsform"
+          action="https://formspree.io/f/mayvvvnd"
+          method="POST"
+        >
+          <ul id="contacform" class="contactform">
+            <li>
+              <label for="fname">Your name</label>
+              <input
+                type="text"
+                name="name"
+                id="fname"
+                placeholder="Jhon Doe*"
+                required=""
+                maxlength="30"
+                pattern="([A-ZΆ-ΫÀ-ÖØ-Þ][A-ZΆ-ΫÀ-ÖØ-Þa-zά-ώß-öø-ÿ]{1,19} ?){1,10}"
+              />
+            </li>
+            <li>
+              <label for="email-address">Your email</label>
+              <input
+                class="email"
+                type="email"
+                name="email"
+                id="email-address"
+                placeholder="email@domain.com*"
+                required=""
+                pattern="(?!(^[.-].*|[^@]*[.-]@|.*\.{2,}.*)|^.{254}.)([a-zA-Z0-9!#$%&'*+\/=?^_`{|}~.-]+@)(?!-.*|.*-\.)([a-zA-Z0-9-]{1,63}\.)+[a-zA-Z]{2,15}"
+              />
+            </li>
+            <li>
+              <textarea
+                rows="4"
+                name="message"
+                id="message"
+                placeholder="Enter your message here...&#10;*All field required"
+                required=""
+                maxlength="500"
+              ></textarea>
+            </li>
+          </ul>
+          <span class="formmsgs" id="error_msg"></span>
+          <button id="submitbtn" class="collabbutton" type="submit">
+            Submit Form
+          </button>
+        </form>
+      </div>
+      <div class="bottomimg"></div>
     </section>
     <footer class="footer">
-        <div class="getlink">
-            <a href="#">Get my Resume</a>
-        </div>
-        <div>
-            <ul class="socialinks">
-                <li><a href="https://stackoverflow.com/"><img src="./Images/ic_stackoverflow.png" alt="Stack Overflow link"></a></li>
-                <li><a href="https://github.com/"><img src="./Images/ic_github.png" alt="GitHub link"></a></li>
-                <li><a href="https://twitter.com/"><img src="./Images/ic_twitter.png" alt="twitter link"></a></li>
-                <li><a href="https://linkedin.com/"><img src="./Images/ic_linkedin.png" alt="linkedin link"></a></li>
-                <li><a href="https://medium.com/"><img src="./Images/ic_medium.png" alt="medium link"></a></li>
-                <li><a href="https://angel.co/"><img src="./Images/ic_angellist.png" alt="angellist link"></a></li>
-            </ul>
-        </div>
+      <div class="getlink">
+        <a href="Resume-Raul_Ospina.pdf" target="_blank">Get my Resume</a>
+      </div>
+      <div>
+        <ul class="socialinks">
+          <li>
+            <a href="https://stackoverflow.com/users/18505372/raminka"
+            target="_blank"
+              ><img
+                src="./Images/ic_stackoverflow.png"
+                alt="Stack Overflow link"
+            /></a>
+          </li>
+          <li>
+            <a href="https://github.com/raminka13"
+            target="_blank"
+              ><img src="./Images/ic_github.png" alt="GitHub link"
+            /></a>
+          </li>
+          <li>
+            <a href="https://twitter.com/raminka13"
+            target="_blank"
+              ><img src="./Images/ic_twitter.png" alt="twitter link"
+            /></a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/raul-ospina/"
+            target="_blank"
+              ><img src="./Images/ic_linkedin.png" alt="linkedin link"
+            /></a>
+          </li>
+          <li>
+            <a href="https://medium.com/@raminka13"
+            target="_blank"
+              ><img src="./Images/ic_medium.png" alt="medium link"
+            /></a>
+          </li>
+          <li>
+            <a href="https://angel.co/u/raul-ospina-raminka"
+            target="_blank"
+              ><img src="./Images/ic_angellist.png" alt="angellist link"
+            /></a>
+          </li>
+        </ul>
+      </div>
     </footer>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>

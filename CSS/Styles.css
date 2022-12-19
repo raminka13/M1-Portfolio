@@ -17,6 +17,21 @@ body {
   z-index: 0;
 }
 
+.contact-link:link {
+  color: #febf52;
+  font-weight: 200;
+  font-size: 1rem;
+  transition: all 150ms ease-in;
+}
+
+.contact-link:visited {
+  color: #febf52;
+}
+
+.contact-link:hover {
+  color: #1c528a;
+}
+
 .nav {
   position: fixed;
   width: 100%;
@@ -192,9 +207,12 @@ div.mobile-menu.active span.bar:nth-child(3) {
 }
 
 .collabbutton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin: 2em 0;
   box-sizing: border-box;
-  border: 0;
+  border: none;
   cursor: pointer;
   height: 50px;
   width: 300px;
@@ -217,7 +235,7 @@ div.mobile-menu.active span.bar:nth-child(3) {
 .collabbutton:hover {
   background: #fff;
   color: #1a2236;
-  border: 1px solid #1a2236;
+  border: 2px solid #1a2236;
 }
 
 .collabbutton:active {
@@ -366,7 +384,7 @@ div.mobile-menu.active span.bar:nth-child(3) {
 .projbtn-mod,
 .projbtn-mod-src {
   background-image: url(../Images/ic_link.svg);
-  background-color: #fff;
+  background-color: #ffffff;
   color: #1a2236;
   border: 1px solid #1a2236;
   width: 15em;
@@ -378,7 +396,7 @@ div.mobile-menu.active span.bar:nth-child(3) {
 }
 
 .projbtn:hover {
-  background: #fff;
+  background: #ededed;
   color: #1a2236;
 }
 
@@ -478,8 +496,8 @@ div.mobile-menu.active span.bar:nth-child(3) {
   margin: 1em auto;
   width: 90%;
   max-width: 700px;
-  height: 450px;
   align-self: center;
+  background-color: #1c528a;
 }
 
 .mod-wrpr {
@@ -487,6 +505,7 @@ div.mobile-menu.active span.bar:nth-child(3) {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  margin: 2rem 0;
 }
 
 .about {
@@ -689,6 +708,12 @@ textarea {
 .socialinks img {
   height: 50%;
   width: auto;
+  transition: all 0.15s ease-in-out;
+}
+
+.socialinks img:hover{
+  transform: scale(1.2);
+  opacity: 0.72;
 }
 
 .email_error {
@@ -762,11 +787,13 @@ textarea {
   }
 
   .mtext {
-    margin: 0;
+    margin: 2rem 0;
   }
 
   .mtext-mod {
     margin: none;
+    width: 100%;
+    text-align: center;
   }
 
   .decoimg {
@@ -869,23 +896,26 @@ textarea {
   .modal-overlay,
   .modal-overlay.active {
     align-items: center;
-    background-color: #1a2236;
+    background-color: #1a2236eb;
   }
 
   .proj-wrp-mod {
     width: 90%;
     height: 90%;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    overflow-y: auto;
+    max-width: 900px;
   }
 
   .projtxt-mod {
     font-weight: 700;
-    padding-top: 0;
+    margin-bottom: 0;
   }
 
   .projectimg-mod {
     margin: 1.5em;
-    height: 80%;
-    width: 100%;
+    box-shadow: 3px 4px 5px #8995b5;
   }
 
   .projbtn-mod,
