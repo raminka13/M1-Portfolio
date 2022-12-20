@@ -97,12 +97,7 @@ function createProject(project) {
   img.className = 'projectimg';
   img.dataset.projnum = project.pId;
 
-  if (project.pId === 1) {
-    pWrp.className = 'projectwrp mproj';
-  } else {
-    pWrp.className = 'projectwrp';
-  }
-
+  pWrp.className = 'projectwrp mproj';
   name.appendChild(nameProj);
   name.className = 'projtxt';
 

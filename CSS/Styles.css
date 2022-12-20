@@ -384,7 +384,7 @@ div.mobile-menu.active span.bar:nth-child(3) {
 .projbtn-mod,
 .projbtn-mod-src {
   background-image: url(../Images/ic_link.svg);
-  background-color: #ffffff;
+  background-color: #fff;
   color: #1a2236;
   border: 1px solid #1a2236;
   width: 15em;
@@ -711,7 +711,7 @@ textarea {
   transition: all 0.15s ease-in-out;
 }
 
-.socialinks img:hover{
+.socialinks img:hover {
   transform: scale(1.2);
   opacity: 0.72;
 }
@@ -722,7 +722,7 @@ textarea {
 
 @media screen and (min-width: 768px) {
   .nav {
-    box-shadow: 0 0.5px 0 #dddfe6;
+    box-shadow: 0 1px 4px #bebebebe;
     background-image: none;
     justify-content: center;
     align-items: center;
@@ -851,13 +851,13 @@ textarea {
   .deco8,
   .deco9 {
     display: block;
-    height: auto;
+    height: 100%;
     width: auto;
     grid-column: span 2;
     grid-row: span 1;
     background-image: url(../Images/deco2.png);
-    background-repeat: no-repeat;
-    background-position: top left;
+    background-repeat: repeat;
+    background-position: center;
     background-size: contain;
   }
 
@@ -872,7 +872,7 @@ textarea {
     background-image: url(../Images/deco3.png);
     grid-column: span 2;
     grid-row: span 1;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-position: top center;
   }
 
@@ -880,7 +880,7 @@ textarea {
   .deco9 {
     background-image: url(../Images/deco4.png);
     background-position: bottom left;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     grid-column: span 1;
     grid-row: span 1;
   }
@@ -890,13 +890,13 @@ textarea {
     grid-column: span 1;
     background-image: url(../Images/deco5.png);
     background-position: top;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
   }
 
   .modal-overlay,
   .modal-overlay.active {
     align-items: center;
-    background-color: #1a2236eb;
+    background-color: #1a2236fd;
   }
 
   .proj-wrp-mod {
