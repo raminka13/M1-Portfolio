@@ -3,6 +3,9 @@
   font-family: 'Poppins', sans-serif;
   text-decoration: none;
   list-style: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html {
@@ -11,25 +14,23 @@ html {
 
 body {
   background-color: #fff;
-  margin: auto;
-  padding: 0;
   width: 100vw;
   z-index: 0;
 }
 
 .contact-link:link {
-  color: #febf52;
-  font-weight: 200;
+  color: #081c31;
+  font-weight: 500;
   font-size: 1rem;
   transition: all 150ms ease-in;
 }
 
 .contact-link:visited {
-  color: #febf52;
+  color: #1c528a;
 }
 
 .contact-link:hover {
-  color: #1c528a;
+  color: #34679d;
 }
 
 .nav {
@@ -90,9 +91,8 @@ body {
 .nav-link {
   color: #1a2236;
   text-decoration: none;
-  font-weight: 200;
-  font-size: 20px;
-  line-height: 24px;
+  font-weight: 300;
+  font-size: 1.5rem;
 }
 
 .navlinks li::after {
@@ -185,11 +185,12 @@ div.mobile-menu.active span.bar:nth-child(3) {
 }
 
 .mtitle {
-  padding-left: 0.5em;
+  margin: 3rem 0;
   font-family: 'Playfair Display', serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 50px;
+  font-size: 3rem;
+  text-align: center;
   line-height: 100%;
   color: #1a2236;
 }
@@ -210,7 +211,7 @@ div.mobile-menu.active span.bar:nth-child(3) {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 2em 0;
+  margin: 1rem 0;
   box-sizing: border-box;
   border: none;
   cursor: pointer;
@@ -276,13 +277,14 @@ div.mobile-menu.active span.bar:nth-child(3) {
 .works {
   width: 100%;
   display: grid;
+  gap: 1em;
   grid-template-columns: repeat(12, 1fr);
   padding-top: 20px;
   flex: 1 0 60%;
 }
 
 .projtitle {
-  width: auto;
+  width: 100%;
 }
 
 .deco0,
@@ -323,8 +325,7 @@ div.mobile-menu.active span.bar:nth-child(3) {
 }
 
 .projlang {
-  margin-top: 12px;
-  margin-left: 20px;
+  margin: 0.5rem 0 1rem 20px;
 }
 
 .projlang ul {
@@ -518,13 +519,13 @@ div.mobile-menu.active span.bar:nth-child(3) {
 }
 
 .contain {
-  display: inline-flex;
+  display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
 .card {
-  margin-bottom: 1em;
+  padding: 1rem;
   background-image: url(../Images/languages.png);
   background-position: right bottom;
   background-size: 50%;
@@ -534,40 +535,43 @@ div.mobile-menu.active span.bar:nth-child(3) {
   background-color: #1c528a;
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
 }
 
 .frames {
   background-image: url(../Images/frameworks.png);
-  background-color: #e2505c;
+  background-color: #962932;
 }
 
 .skills {
   background-image: url(../Images/skills.png);
-  background-color: #febf52;
+  background-color: #ff9f45;
 }
 
 .litxt {
-  font-style: normal;
-  width: 90%;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 27px;
+  text-align: center;
+  width: 100%;
+  height: 70%;
+  font-weight: 300;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
   letter-spacing: -0.0525em;
   color: #fff;
   list-style-position: inside;
 }
 
 .sectitle {
-  margin-top: 1.5em;
-  padding-left: 2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
   font-style: normal;
-  width: 90%;
+  width: 100%;
+  height: 30%;
   font-family: 'Poppins', sans-serif;
-  font-weight: 800;
-  font-size: 20px;
-  line-height: 30px;
+  font-weight: 500;
+  font-size: 1.25rem;
   color: #fff;
 }
 
@@ -661,6 +665,12 @@ textarea {
   color: #7d7c84;
 }
 
+.formmsgs {
+  width: 100%;
+  text-align: center;
+  margin: 0.5rem;
+}
+
 .footer {
   background-color: #1a2236;
   padding: 0;
@@ -679,7 +689,6 @@ textarea {
   background-repeat: no-repeat;
   background-position: right center;
   background-size: 22px;
-  margin-right: 5rem;
 }
 
 .getlink a {
@@ -687,7 +696,6 @@ textarea {
   font-weight: 500;
   line-height: 24px;
   color: #92dcdc;
-  text-decoration: none;
 }
 
 .socialinks {
@@ -717,7 +725,7 @@ textarea {
 }
 
 .email_error {
-  background-color: #e2505c;
+  background-color: #e2505c7b;
 }
 
 @media screen and (min-width: 768px) {
@@ -749,8 +757,8 @@ textarea {
   }
 
   .nav-link {
-    font-size: 12px;
-    font-weight: 400;
+    font-size: 1rem;
+    font-weight: 300;
   }
 
   .homesection {
@@ -776,10 +784,9 @@ textarea {
   }
 
   .mtitle {
-    font-size: 90px;
+    text-align: left;
+    font-size: 6rem;
     font-weight: 500;
-    line-height: 90px;
-    padding: 1px;
   }
 
   .maintxt {
@@ -804,6 +811,11 @@ textarea {
     display: block;
   }
 
+  #works,
+  #about {
+    padding-top: 6rem;
+  }
+
   .works {
     margin: 0;
     padding: 0;
@@ -816,18 +828,11 @@ textarea {
   }
 
   .projtitle {
-    width: auto;
     background-image: url(../Images/image_dots.svg);
     background-repeat: no-repeat;
-    background-position: right top;
-    grid-column: span 5;
+    background-position: right bottom;
+    grid-column: span 4;
     grid-row: span 1;
-  }
-
-  .projtitle h1 {
-    position: static;
-    transform: rotate(-90deg);
-    text-align: center;
   }
 
   .projectwrp {
@@ -838,59 +843,6 @@ textarea {
 
   .mproj {
     display: block;
-  }
-
-  .deco0,
-  .deco1,
-  .deco2,
-  .deco3,
-  .deco4,
-  .deco5,
-  .deco6,
-  .deco7,
-  .deco8,
-  .deco9 {
-    display: block;
-    height: 100%;
-    width: auto;
-    grid-column: span 2;
-    grid-row: span 1;
-    background-image: url(../Images/deco2.png);
-    background-repeat: repeat;
-    background-position: center;
-    background-size: contain;
-  }
-
-  .deco2,
-  .deco7 {
-    background-image: url(../Images/deco1.png);
-    background-position: center;
-  }
-
-  .deco3,
-  .deco6 {
-    background-image: url(../Images/deco3.png);
-    grid-column: span 2;
-    grid-row: span 1;
-    background-repeat: repeat;
-    background-position: top center;
-  }
-
-  .deco4,
-  .deco9 {
-    background-image: url(../Images/deco4.png);
-    background-position: bottom left;
-    background-repeat: repeat;
-    grid-column: span 1;
-    grid-row: span 1;
-  }
-
-  .deco5,
-  .deco8 {
-    grid-column: span 1;
-    background-image: url(../Images/deco5.png);
-    background-position: top;
-    background-repeat: repeat;
   }
 
   .modal-overlay,
@@ -934,23 +886,18 @@ textarea {
   }
 
   .aboutwrpr {
-    padding: 0;
-    margin: 0 0 0 60px;
-    width: 40%;
+    width: 60%;
   }
 
   .contain {
-    width: 30%;
-    margin: 30px 20px 30px 90px;
+    width: 40%;
+    height: auto;
   }
 
   .card,
   .dots {
-    padding: 0;
-    margin: 0;
-    height: auto;
-    width: auto;
-    flex: 1 0 50%;
+    width: 50%;
+    height: 40vh;
   }
 
   .card li {
@@ -958,25 +905,28 @@ textarea {
   }
 
   .sectitle {
-    font-size: 13px;
+    font-size: 90%;
+  }
+
+  .litxt {
+    display: flex;
+    justify-content: center;
   }
 
   .litxt ul {
-    margin-top: 0;
-    margin-bottom: 15px;
-    font-size: 11px;
-    font-weight: 200;
-    line-height: 14px;
+    text-align: left;
+    font-size: calc(0.5rem + 1vw);
+    font-weight: 400;
+    line-height: 1.4rem;
   }
 
   .dots {
     background-image: url(../Images/image_dots.svg);
     background-repeat: no-repeat;
-    background-size: 60%;
+    background-size: 80%;
     background-position: right bottom;
-    width: auto;
+    width: 50%;
     height: auto;
-    flex: 1 0 50%;
   }
 
   .contact {

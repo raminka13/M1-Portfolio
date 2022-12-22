@@ -77,8 +77,7 @@ pTitle.textContent = 'Projects';
 
 function createProject(project) {
   const projDiv = document.createElement('div');
-  const projDeco = document.createElement('div');
-  const projDeco1 = document.createElement('div');
+
   const img = document.createElement('img');
   const pWrp = document.createElement('div');
   const name = document.createElement('h2');
@@ -88,9 +87,6 @@ function createProject(project) {
   const nameProj = document.createTextNode(project.pName);
 
   projDiv.className = 'project';
-
-  projDeco.className = `deco${Math.floor(Math.random() * 10)}`;
-  projDeco1.className = `deco${Math.floor(Math.random() * 10)}`;
 
   img.src = project.pImg;
   img.alt = project.pName;
@@ -121,8 +117,7 @@ function createProject(project) {
   pBtn.dataset.projnum = project.pId;
 
   projContainer.appendChild(projDiv);
-  projContainer.appendChild(projDeco);
-  projContainer.appendChild(projDeco1);
+
   projDiv.appendChild(img);
   projDiv.appendChild(pWrp);
   pWrp.appendChild(name);
