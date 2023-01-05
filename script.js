@@ -60,7 +60,7 @@ const projectsArr = [
     pImg: './Images/BooksListApp.png',
     pText: 'With this great app you can make a list of books to read later. You can add, edit, delete and mark as read your books. This project is done with JavaScript and Webpack. It is a single page application.',
     btnLive: 'https://raminka13.github.io/booklistapp-es6-modules/',
-    btnSrc: 'https://raminka13.github.io/booklistapp-es6-modules/',
+    btnSrc: 'https://github.com/raminka13/booklistapp-es6-modules/',
   },
 ];
 

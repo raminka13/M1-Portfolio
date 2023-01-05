@@ -284,7 +284,7 @@ div.mobile-menu.active span.bar:nth-child(3) {
 }
 
 .projtitle {
-  width: 100%;
+  grid-column: span 12;
 }
 
 .deco0,
@@ -831,7 +831,7 @@ textarea {
     background-image: url(../Images/image_dots.svg);
     background-repeat: no-repeat;
     background-position: right bottom;
-    grid-column: span 4;
+    grid-column: span 6;
     grid-row: span 1;
   }
 
