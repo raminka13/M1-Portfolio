@@ -14,7 +14,7 @@ const projectsArr = [
     tags: ['Ruby', 'Rails', 'PostgreSQL'],
     pImg: './Images/BlogApp.png',
     pText: 'A blog is a a regularly updated website or web page, typically one run by an individual or small group, that is written in an informal or conversational style. This project is done with Ruby on Rails implementing all the CRUD methods.',
-    btnLive: 'https://github.com/raminka13/blog-app',
+    btnLive: 'https://blog-app-z5hk.onrender.com',
     btnSrc: 'https://github.com/raminka13/blog-app',
   },
   {
