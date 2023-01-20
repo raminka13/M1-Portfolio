@@ -1,0 +1,199 @@
+{
+    "meta": {
+      "theme": "elegant"
+    },
+    "basics": {
+      "name": "Raul Ospina",
+      "label": "Full Stack Software Engineer",
+      "image": "",
+      "email": "raminka13@hotmail.com",
+      "phone": "+57 301 3368172",
+      "url": "https://raminka13.github.io/M1-Portfolio/",
+      "summary": "As a software engineer with a passion for solving complex problems and a track record of delivering high-quality software, I am always ready for my next challenge. Whether it's developing responsive and user-friendly websites, optimizing performance, or collaborating with cross-functional teams, I thrive in dynamic environments where I can make a meaningful impact. Let's work together to build innovative solutions and bring your ideas to life.",
+      "location": {
+        "city": "Palmira",
+        "countryCode": "CO",
+        "region": "Valle"
+      },
+      "profiles": [{
+        "network": "Twitter",
+        "username": "raminka13",
+        "url": "https://twitter.com/raminka13"
+        },
+        {
+          "url": "https://github.com/raminka13",
+          "username": "raminka13",
+          "network": "github"
+        }
+     ]
+    },
+    "work": [{
+      "name": "Programming and Interactive Creations",
+      "position": "Junior Engineer",
+      "url": "https://picaio.com",
+      "startDate": "2022-12-01",
+      "summary": "Design and develop UI for B2B customers optimizing great UX and work with Backend engineers to design high performance APIs",
+      "highlights": [
+        "Starting the journey"
+      ]
+    }],
+    "volunteer": [{
+      "organization": "Organization",
+      "position": "Volunteer",
+      "url": "https://organization.com/",
+      "startDate": "2012-01-01",
+      "endDate": "2013-01-01",
+      "summary": "Description…",
+      "highlights": [
+        "Awarded 'Volunteer of the Month'"
+      ]
+    }],
+    "education": [{
+      "institution": "Microverse",
+      "url": "https://www.microverse.org/",
+      "area": "Software Development",
+      "studyType": "Bootcamp",
+      "startDate": "2022-04-03",
+      "endDate": "2023-02-01",
+      "courses": [
+        "FrontEnd",
+        "BackEnd"
+      ]
+    }],
+    "awards": [{
+      "title": "Award",
+      "date": "2014-11-01",
+      "awarder": "Company",
+      "summary": "There is no spoon."
+    }],
+    "certificates": [{
+      "name": "Microverse JavaScript Module",
+      "date": "2022-07-31",
+      "issuer": "Microverse",
+      "url": "https://www.credential.net/ad6f9a3d-9d7c-4bc5-ac85-b5c78562e8d4"
+    },
+    {
+      "name": "Microverse React & Redux Module",
+      "date": "2022-09-04",
+      "issuer": "Microverse",
+      "url": "https://www.credential.net/ed733298-beed-459c-b6bf-f657fbf0d879"
+    },
+     {
+      "name": "Microverse Ruby/Databases Module",
+      "date": "2022-10-16",
+      "issuer": "Microverse",
+      "url": "https://www.credential.net/f1e0fe84-434e-4020-9b3f-f84ae49e0a46"
+    },
+       {
+      "name": "Microverse Ruby on Rails Module",
+      "date": "2022-11-20",
+      "issuer": "Microverse",
+      "url": "https://www.credential.net/14b9bac9-5e05-4322-a4ae-61ac80caf062"
+      },
+       {
+      "name": "Microverse Full Stack Software Development",
+      "date": "2023-01-15",
+      "issuer": "Microverse",
+      "url": "https://www.credential.net/c0715e17-5586-4419-8a76-0b74f1f0f1e2"
+      },
+       {
+      "name": "EF Standard English Test (EF SET) logo EF SET English Certificate 74/100 (C2 Proficient)",
+      "date": "2023-01-12",
+      "issuer": "EF Standard English Test (EF SET) ",
+      "url": "https://www.efset.org/cert/Xo4e77"
+    }
+    ],
+    "publications": [{
+      "name": "The Next Revolution",
+      "publisher": "Medium.com",
+      "releaseDate": "2022-08-19",
+      "url": "https://raminka13.medium.com/the-next-revolution-3da84b1d620b",
+      "summary": "As humans venture into the future, it is increasingly important for engineers to operate in a more conscientious and responsible manner."
+    }],
+    "skills": [{
+      "name": "Front End",
+      "level": "Intermediate",
+      "keywords": [
+        "HTML",
+        "CSS",
+        "Bootstrap",
+        "JavaScript",
+        "React"
+      ]
+    },
+    {
+      "name": "Back End",
+      "level": "Intermediate",
+      "keywords": [
+        "Ruby",
+        "PostgreSQL",
+        "Rails"
+      ]
+    }
+    ],
+    "languages": [{
+      "language": "English",
+      "fluency": "Professional"
+    },
+    {
+      "language": "Spanish",
+      "fluency": "Native"
+    }
+    ],
+    "interests": [{
+      "name": "Photography",
+      "keywords": [
+        "Portraits",
+        "Landscapes"
+      ]
+    },
+    {
+      "name": "Nature",
+      "keywords": [
+        "Wildlife",
+        "Plants"
+      ]
+    }
+    ],
+    "references": [{
+      "name": "Mustafa Fahimy, Microverse Alumni",
+      "reference": "Raul is a hard worker, a good listener, a perfect partner and he always trying to finish his tasks as perfect as possible, working with him developed me a lot, thanks for everything Raul, I hope you achieve you goals cause you deserve it."
+    }],
+    "projects": [{
+      "name": "Budgety",
+      "description": "Mobile web application where you can manage your budget: you have a list of transactions associated with a category, so that you can see how much money you spent and on what. This project is done with Ruby on Rails implementing all the CRUD methods.",
+      "highlights": [
+        "Full-Stack App done with Rails"
+      ],
+      "keywords": [
+        "Rails"
+      ],
+      "startDate": "2022-11-11",
+      "endDate": "2022-11-20",
+      "url": "https://github.com/raminka13/budgety/",
+      "roles": [
+        "Team Lead"
+      ],
+      "entity": "App",
+      "type": "application"
+    },
+    {
+      "name": "Blog",
+      "description": "A blog is a a regularly updated website or web page, typically one run by an individual or small group, that is written in an informal or conversational style. This project is done with Ruby on Rails implementing all the CRUD methods.",
+      "highlights": [
+        "Full-Stack App done with Rails"
+      ],
+      "keywords": [
+        "Rails"
+      ],
+      "startDate": "2022-11-11",
+      "endDate": "2022-11-20",
+      "url": "https://github.com/raminka13/blog-app",
+      "roles": [
+        "Team Lead"
+      ],
+      "entity": "App",
+      "type": "application"
+    }
+    ]
+  }
